@@ -26,12 +26,14 @@ const weddingGalleries = {
     'ana-mihai': {
         title: 'Ana & Mihai',
         photos: [
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png',
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png',
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png',
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png',
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png',
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png'
+            'https://poze.b-cdn.net/DSC00537.jpg',
+            'https://poze.b-cdn.net/DSC00418.jpg',
+            'https://poze.b-cdn.net/DSC00438.jpg',
+            'https://poze.b-cdn.net/DSC00853.jpg',
+            'https://poze.b-cdn.net/image00001.jpg',
+            'https://poze.b-cdn.net/DSC02606.jpg',
+             'https://poze.b-cdn.net/DSC02668.jpg',
+            'https://poze.b-cdn.net/DSC01605.jpg'
         ]
     },
     'maria-andrei': {
