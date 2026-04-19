@@ -1,16 +1,26 @@
 // DATE GALERII - Aici adaugi pozele reale pentru fiecare nuntă
 const weddingGalleries = {
     'debora-moise': {
-        title: 'Debora & Moise',
+        title: 'Alexandra  & Adi',
         photos: [
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png',
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png',
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png',
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png',
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png',
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png',
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png',
-            'https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png'
+            'https://poze.b-cdn.net/DSC00682.jpg',
+            'https://poze.b-cdn.net/DSC00401.jpg',
+            'https://poze.b-cdn.net/DSC00227.jpg',
+            'https://poze.b-cdn.net/DSC00170.jpg',
+            'https://poze.b-cdn.net/DSC00649.jpg',
+            'https://poze.b-cdn.net/DSC00628.jpg',
+            'https://poze.b-cdn.net/DSC00342.jpg',
+            'https://poze.b-cdn.net/DSC00217.jpg',
+            'https://poze.b-cdn.net/DSC00773.jpg',
+            'https://poze.b-cdn.net/DSC09686.jpg',
+            'https://poze.b-cdn.net/DSC01750.jpg',
+            'https://poze.b-cdn.net/image00007.jpeg',
+             'https://poze.b-cdn.net/DSC00368.jpg',
+            'https://poze.b-cdn.net/DSC08827.jpg',
+            'https://poze.b-cdn.net/image00007.jpeg',
+            'https://poze.b-cdn.net/DSC09241.jpg',
+             'https://poze.b-cdn.net/image00005.jpeg',
+            'https://poze.b-cdn.net/DSC09731.jpg'
         ]
     },
     'ana-mihai': {
