@@ -1,0 +1,153 @@
+/* HEADER PAGINĂ */
+.page-header {
+    padding: 10rem 4% 4rem;
+    background: linear-gradient(to bottom, var(--negru-light), var(--negru));
+    text-align: center;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--auriu);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    font-size: 1.1rem;
+    color: var(--crem);
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* FILTRE */
+.filtre {
+    padding: 2rem 0;
+    background: var(--negru);
+    position: sticky;
+    top: 70px;
+    z-index: 100;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--auriu);
+    color: var(--auriu);
+    padding: 0.7rem 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 3px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--auriu);
+    color: var(--negru);
+}
+
+/* GRID VIDEO MARE */
+.portofoliu-complet {
+    padding: 4rem 0 6rem;
+    background: var(--negru-light);
+    min-height: 60vh;
+}
+
+.video-grid-large {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* CARD VIDEO ÎMBUNĂTĂȚIT */
+.video-grid-large .video-card {
+    aspect-ratio: 16/10;
+    transition: var(--transition);
+}
+
+.video-grid-large .video-card.hidden {
+    display: none;
+}
+
+.video-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(10,10,10,0.9), transparent);
+    transform: translateY(100%);
+    transition: var(--transition);
+}
+
+.video-info h3 {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.video-info p {
+    color: var(--auriu);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.video-card:hover .video-info {
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .video-grid-large {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .header-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .filtre {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-grid-large {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-buttons {
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+    
+    .page-header {
+        padding: 8rem 4% 3rem;
+    }
+    
+    .header-content h1 {
+        font-size: 1.8rem;
+    }
+}

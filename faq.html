@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F&Q | AlphaLens</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="faq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVIGAȚIE -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">AlphaLens</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="foto.html">Portofoliu Foto</a></li>
+                <li><a href="video.html">Portofoliu Video</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html" class="active">F&Q</a></li>
+            </ul>
+            
+            <a href="#" class="btn-oferta">Solicită Ofertă</a>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="page-header">
+        <div class="header-content">
+            <span class="subtitle-small">F&Q</span>
+            <h1>Întrebări Frecvente</h1>
+            <p>Găsește răspunsurile la cele mai comune întrebări despre serviciile noastre.</p>
+        </div>
+    </section>
+
+    <!-- SECȚIUNE F&Q -->
+    <section class="faq-section">
+        <div class="container-full">
+            <div class="faq-grid">
+                
+                <!-- ÎNTREBĂRI -->
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Cât timp durează să primesc fotografiile și videoclipurile?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Timpul de livrare este de obicei între 2-4 săptămâni pentru fotografii și 4-6 săptămâni pentru videoclipuri, în funcție de sezon și complexitatea proiectului. Pentru evenimente speciale, putem discuta despre termene de livrare expedite.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Oferiți servicii de fotografie și filmare în același timp?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Da, oferim pachete complete care includ atât fotografie, cât și filmare profesională. Echipa noastră este formată din fotografi și cameramani experimentați care lucrează împreună pentru a captura fiecare moment important al evenimentului tău.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Cât costă un pachet de nuntă complet?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Prețurile variază în funcție de nevoile tale specifice. Un pachet de bază pentru fotografie de nuntă începe de la 800€, iar pachetele complete (foto + video) încep de la 1500€. Contactează-ne pentru o ofertă personalizată bazată pe cerințele tale.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Faceți deplasări în alte orașe sau țări?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolut! Ne deplasăm oriunde în România și Europa. Taxele de deplasare sunt calculate în funcție de distanță și sunt discutate transparent înainte de eveniment. Pentru destinații internaționale, oferim pachete speciale.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Câte fotografii primesc în pachetul final?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Numărul de fotografii depinde de durata evenimentului și pachetul ales. În general, pentru o nuntă de o zi, livrăm între 300-500 de fotografii editate profesional. Toate fotografiile sunt retușate la nivel de culoare, contrast și expunere.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Pot solicita anumite poze sau unghiuri specifice?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Desigur! Înainte de eveniment, avem o întâlnire de planificare unde discutăm despre viziunea ta, stilul preferat și orice cerințe specifice. Ne place să colaborăm cu clienții noștri pentru a ne asigura că rezultatul final depășește așteptările.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Cum primesc materialele finale?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Fotografiile și videoclipurile sunt livrate printr-o galerie online privată, unde le poți vizualiza, descărca și partaja cu familia și prietenii. De asemenea, oferim opțiunea de livrare pe stick USB sau hard disk extern pentru o calitate maximă.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Ce se întâmplă dacă vremea este rea în ziua evenimentului?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Suntem pregătiți pentru orice condiții meteorologice. Avem echipament profesional rezistent la intemperii și experiență în a lucra în diverse condiții. De asemenea, discutăm dinainte despre planuri alternative pentru ședințele foto în aer liber.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SIDEBAR CONTACT -->
+                <div class="faq-sidebar">
+                    <div class="sidebar-box">
+                        <h3>Nu ai găsit răspunsul?</h3>
+                        <p>Suntem aici să te ajutăm. Contactează-ne direct și îți vom răspunde în cel mai scurt timp.</p>
+                        <a href="contact.html" class="btn-sidebar">Contactează-ne</a>
+                    </div>
+                    
+                    <div class="sidebar-box">
+                        <h3>Programări</h3>
+                        <p>Recomandăm să ne contactezi cu cel puțin 6-12 luni înainte de eveniment pentru a ne asigura disponibilitatea.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (identic cu index.html) -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">AlphaLens</span>
+                <p>Fotografie & Filmare Profesională</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#">Fotografi & Cameramani</a>
+                <a href="foto.html">Portofoliu Foto</a>
+                <a href="video.html">Portofoliu Video</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+            </div>
+            
+            <div class="footer-contact">
+                <p>contact@alphalens.ro</p>
+                <p>+40 722 123 456</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 AlphaLens. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="faq.js"></script>
+</body>
+</html>
