@@ -197,30 +197,6 @@
 }
 
 /* ============================================ */
-/* FOOTER CONTACT LINKS - F&Q */
-/* ============================================ */
-.footer-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0.5rem;
-    text-align: right;
-}
-
-.footer-contact a,
-.footer-contact a:visited,
-.footer-contact a:hover,
-.footer-contact a:focus,
-.footer-contact a:active {
-    display: block;
-    color: var(--crem) !important;
-    text-decoration: none !important;
-    font-size: 0.9rem;
-    opacity: 0.9;
-    outline: none;
-}
-
-/* ============================================ */
 /* RESPONSIVE */
 /* ============================================ */
 @media (max-width: 1024px) {
@@ -271,9 +247,22 @@
     .faq-item.active .faq-answer {
         padding: 0 1.2rem 1.2rem;
     }
+}
 
-    .footer-contact {
-        align-items: center;
-        text-align: center;
-    }
+
+.footer-contact a {
+  color: #d4af37;           /* Auriu — schimbă cu ce culoare vrei tu */
+  text-decoration: none;   /* Elimină sublinierea */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #f0e68c;          /* Auriu mai deschis la hover */
+  text-decoration: underline; /* Sau none, cum preferi */
+}
+
+/* Dacă vrei să elimini și outline-ul albastru la click (focus) */
+.footer-contact a:focus {
+  outline: none;
 }

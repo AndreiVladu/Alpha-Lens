@@ -418,3 +418,20 @@
         padding: 0.2rem 0.4rem;
     }
 }
+
+.footer-contact a {
+  color: #d4af37;           /* Auriu — schimbă cu ce culoare vrei tu */
+  text-decoration: none;   /* Elimină sublinierea */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #f0e68c;          /* Auriu mai deschis la hover */
+  text-decoration: underline; /* Sau none, cum preferi */
+}
+
+/* Dacă vrei să elimini și outline-ul albastru la click (focus) */
+.footer-contact a:focus {
+  outline: none;
+}
