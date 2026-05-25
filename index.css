@@ -458,6 +458,7 @@ body {
     justify-content: center;
     color: var(--auriu);
     transition: var(--transition);
+    text-decoration: none;
 }
 
 .footer-social a:hover {
@@ -475,11 +476,25 @@ body {
     text-align: right;
 }
 
-.footer-contact p {
+.footer-contact p,
+.footer-contact a {
     color: var(--crem);
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
     opacity: 0.9;
+}
+
+.footer-contact a {
+    display: block;
+    text-decoration: none;
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus,
+.footer-contact a:visited,
+.footer-contact a:active {
+    color: var(--crem);
+    text-decoration: none;
 }
 
 .footer-bottom {
