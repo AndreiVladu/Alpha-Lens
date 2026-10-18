@@ -1,7 +1,7 @@
 // DATE GALERII - Aici adaugi pozele reale pentru fiecare nuntă
 const weddingGalleries = {
     'debora-moise': {
-        title: 'Alexandra  & Adi',
+        title: 'Alexandra & Adi',
         photos: [
             'https://poze.b-cdn.net/DSC00682.jpg',
             'https://poze.b-cdn.net/DSC00401.jpg',
@@ -17,14 +17,13 @@ const weddingGalleries = {
             'https://poze.b-cdn.net/image00007.jpeg',
              'https://poze.b-cdn.net/DSC00368.jpg',
             'https://poze.b-cdn.net/DSC08827.jpg',
-            'https://poze.b-cdn.net/image00007.jpeg',
             'https://poze.b-cdn.net/DSC09241.jpg',
              'https://poze.b-cdn.net/image00005.jpeg',
             'https://poze.b-cdn.net/DSC09731.jpg'
         ]
     },
     'ana-mihai': {
-        title: 'Ana & Mihai',
+        title: 'Alexandra & Madalin',
         photos: [
              'https://poze.b-cdn.net/9-DSC05693.jpg',
             'https://poze.b-cdn.net/17-DSC05749.jpg',
@@ -39,9 +38,8 @@ const weddingGalleries = {
         ]
     },
     'maria-andrei': {
-        title: 'Maria & Andrei',
+        title: 'Natalia & Vio',
         photos: [
-             'https://poze.b-cdn.net/DSC00575.jpg',
             'https://poze.b-cdn.net/DSC00575.jpg',
             'https://poze.b-cdn.net/DSC00542.jpg',
               'https://poze.b-cdn.net/DSC00535.jpg',
@@ -58,7 +56,7 @@ const weddingGalleries = {
         ]
     },
     'elena-cristian': {
-        title: 'Elena & Cristian',
+        title: 'Mirela & Dorian',
         photos: [
              'https://poze.b-cdn.net/DSC02579.jpg',
             'https://poze.b-cdn.net/DSC02554.jpg',
@@ -84,7 +82,7 @@ const weddingGalleries = {
         ]
     },
     'ioana-alexandru': {
-        title: 'Ioana & Alexandru',
+        title: 'Oana & Gabi',
         photos: [
             'https://poze.b-cdn.net/DSC08562.jpg',
             'https://poze.b-cdn.net/DSC08537.jpg',
@@ -107,7 +105,7 @@ const weddingGalleries = {
         ]
     },
     'cristina-adrian': {
-        title: 'Cristina & Adrian',
+        title: 'Elisa',
         photos: [
             'https://poze.b-cdn.net/DSC00537.jpg',
             'https://poze.b-cdn.net/DSC00418.jpg',
@@ -121,7 +119,7 @@ const weddingGalleries = {
     },
 
   'majorat1': {
-        title: 'Cristina & Adrian',
+        title: 'Liviu',
         photos: [
             'https://poze.b-cdn.net/DSC08193.jpg',
             'https://poze.b-cdn.net/DSC08183.jpg',
@@ -146,7 +144,7 @@ const weddingGalleries = {
     },
 
       'majorat2': {
-        title: 'Cristina & Adrian',
+        title: 'Vladulescu',
         photos: [
             'https://poze.b-cdn.net/raul.marian.photography%20(1%20of%201).jpg',
             'https://poze.b-cdn.net/raul.marian.photography%20(1%20of%201)-9.jpg',
@@ -185,7 +183,18 @@ let touchEndX = 0;
 
 // DESCHIDE GALERIE
 function openGallery(weddingId) {
-    currentGallery = weddingGalleries[weddingId];
+    const gallery = weddingGalleries[weddingId];
+    if (!gallery) return;
+
+    // Galeriile fără poze afișează poza de copertă a cardului
+    let photos = gallery.photos.filter(Boolean);
+    if (photos.length === 0) {
+        const cover = document.querySelector(`.wedding-card[onclick="openGallery('${weddingId}')"] img`);
+        photos = cover ? [cover.src] : [];
+    }
+    if (photos.length === 0) return;
+
+    currentGallery = { title: gallery.title, photos };
     currentPhotoIndex = 0;
     
     document.getElementById('galleryTitle').textContent = currentGallery.title;

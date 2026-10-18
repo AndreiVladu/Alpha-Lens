@@ -37,8 +37,7 @@ const videoFrame = document.getElementById('videoFrame');
 function openModal(videoUrl) {
     if (!videoModal || !videoFrame) return;
     
-    const embedUrl = videoUrl + '?autoplay=true&preload=true';
-    videoFrame.src = embedUrl;
+    videoFrame.src = videoUrl;
     
     videoModal.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -91,8 +90,10 @@ if (navbar) {
 // SMOOTH SCROLL pentru anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const target = document.querySelector(href);
         if (target) {
             target.scrollIntoView({
                 behavior: 'smooth',

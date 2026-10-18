@@ -5,10 +5,11 @@ const MAIL_CONFIG = {
     MAIL_TEMPLATE: 'template_spi0i5u' 
 };
 
-// Inițializare EmailJS
-(function() {
+// Inițializare EmailJS (scriptul poate fi blocat de ad-blockere)
+const emailjsLoaded = typeof emailjs !== 'undefined';
+if (emailjsLoaded) {
     emailjs.init(MAIL_CONFIG.USER_KEY);
-})();
+}
 
 // Selectare elemente din HTML
 const contactForm = document.getElementById('contactForm');
@@ -18,6 +19,14 @@ const btnLoader = submitBtn.querySelector('.btn-loading'); // Am pus 'btn-loadin
 
 contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
+
+    if (!emailjsLoaded) {
+        const formMessage = document.getElementById('formMessage');
+        if (formMessage) {
+            formMessage.textContent = 'Formularul nu poate fi trimis momentan. Contactează-ne telefonic la +40 762 309 113.';
+        }
+        return;
+    }
 
     // Stare de încărcare
     submitBtn.disabled = true;
