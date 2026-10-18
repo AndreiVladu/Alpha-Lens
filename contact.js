@@ -23,7 +23,7 @@ contactForm.addEventListener('submit', function(e) {
     if (!emailjsLoaded) {
         const formMessage = document.getElementById('formMessage');
         if (formMessage) {
-            formMessage.textContent = 'Formularul nu poate fi trimis momentan. Contactează-ne telefonic la +40 762 309 113.';
+            formMessage.textContent = 'Formularul nu poate fi trimis momentan. Scrie-ne la vladulescuandrei6@gmail.com sau sună la +40 762 309 113.';
         }
         return;
     }
