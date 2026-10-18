@@ -49,3 +49,8 @@
 .extras-box small{display:block;color:#898579;font-style:italic;font-size:.74rem;margin-top:2px}
 .pricing-footnote{text-align:center;color:#9a9a9a;font-style:italic;font-size:.78rem;margin-top:40px}
 @media(max-width:620px){.packages-grid--two{grid-template-columns:1fr}.extras-box{padding:22px 18px}}
+.event-tabs button{color:var(--text-light);background:none;border:1px solid rgba(212,175,55,.55);border-radius:30px;padding:12px 30px;font-family:inherit;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:var(--transition)}
+.event-tabs button:hover,.event-tabs button:focus-visible,.event-tabs button.active{background:var(--auriu);color:var(--negru)}
+.tabs-ready .event-section{display:none}
+.tabs-ready .event-section.active{display:block}
+@media(max-width:620px){.event-tabs button{padding:11px 22px}}
