@@ -11,6 +11,20 @@ if (emailjsLoaded) {
     emailjs.init(MAIL_CONFIG.USER_KEY);
 }
 
+// Precompletează mesajul cu pachetul ales pe pagina de prețuri
+// (ex: contact.html?eveniment=nunta&pachet=Premium)
+(function() {
+    const params = new URLSearchParams(window.location.search);
+    const pachet = params.get('pachet');
+    const mesaj = document.getElementById('mesaj');
+    if (!pachet || !mesaj || mesaj.value) return;
+
+    const evenimente = { nunta: 'Nuntă', botez: 'Botez', cununie: 'Cununie', majorat: 'Majorat' };
+    const eveniment = evenimente[params.get('eveniment')];
+    const text = eveniment ? `${pachet} – ${eveniment}` : pachet;
+    mesaj.value = `Bună ziua! Sunt interesat(ă) de pachetul ${text}. `;
+})();
+
 // Selectare elemente din HTML
 const contactForm = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
