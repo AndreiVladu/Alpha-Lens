@@ -341,3 +341,17 @@
 .footer-contact a:focus {
   outline: none;
 }
+
+/* Email / telefon pentru fiecare colaborator */
+.info-person + .info-person {
+  margin-top: 0.6rem;
+}
+
+.info-name {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}

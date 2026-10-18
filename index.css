@@ -674,3 +674,17 @@ body {
   outline: none;
 }
 
+
+/* Datele de contact ale fiecărui colaborator în footer */
+.footer-contact .footer-contact-name {
+    margin: 0.9rem 0 0.2rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.55;
+}
+
+.footer-contact .footer-contact-name:first-child {
+    margin-top: 0;
+}
