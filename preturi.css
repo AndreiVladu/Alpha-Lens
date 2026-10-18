@@ -36,3 +36,16 @@
 @media(max-width:950px){.packages-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.package-card:last-child:nth-child(odd){grid-column:1/-1;max-width:520px;width:100%;justify-self:center}}
 @media(max-width:620px){.pricing-hero{padding:125px 20px 48px}.pricing-hero>p{font-size:.9rem}.pricing-wrap{padding:8px 16px 45px}.event-section{padding:48px 0 20px}.event-heading{margin-bottom:28px}.packages-grid{grid-template-columns:1fr;gap:25px}.package-card,.package-card:last-child:nth-child(odd){grid-column:auto;max-width:480px;width:100%;justify-self:center;padding:27px 23px 23px}.package-top h3{font-size:1.7rem}.package-features li{font-size:.82rem}.pricing-contact{padding:60px 20px}.event-tabs a{padding:11px 25px}}
 @media(prefers-reduced-motion:reduce){.package-card,.package-button,.event-tabs a{transition:none}}
+.package-group-title{text-align:center;color:var(--auriu);font-size:.8rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin:44px 0 30px}
+.event-heading+.package-group-title{margin-top:0}
+.package-top{padding-bottom:16px}
+.packages-grid--two{grid-template-columns:repeat(2,minmax(0,1fr));max-width:840px;margin:0 auto}
+.extras-box{max-width:840px;margin:30px auto 0;background:#f8f6ef;color:#24221d;border:1px solid rgba(212,175,55,.45);border-radius:10px;padding:26px 28px}
+.extras-box h3{text-align:center;font-size:1rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding-bottom:14px;margin-bottom:12px;border-bottom:1px dashed #d9caa0}
+.extras-box ul{list-style:none;margin:0;padding:0}
+.extras-box li{position:relative;padding:8px 0 8px 22px;font-size:.85rem;line-height:1.55;color:#514e46}
+.extras-box li:before{content:"+";position:absolute;left:0;top:7px;color:#b38b2d;font-weight:700}
+.extras-box li span{color:#95763a;font-weight:700}
+.extras-box small{display:block;color:#898579;font-style:italic;font-size:.74rem;margin-top:2px}
+.pricing-footnote{text-align:center;color:#9a9a9a;font-style:italic;font-size:.78rem;margin-top:40px}
+@media(max-width:620px){.packages-grid--two{grid-template-columns:1fr}.extras-box{padding:22px 18px}}
