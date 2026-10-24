@@ -1,359 +1,415 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Pachete foto, video și foto-video pentru nunți, botezuri, cununii și majorate, oferite de AlphaLens.">
-<title>Pachete & Prețuri Foto-Video | AlphaLens</title>
-<link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="preturi.css">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pachete &amp; Prețuri | AlphaLens</title>
+  <meta name="description" content="Pachete foto, video și foto-video pentru nunți, botezuri, cununii și majorate, oferite de AlphaLens.">
+  <meta name="theme-color" content="#f5efe3">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ro_RO">
+  <meta property="og:site_name" content="AlphaLens">
+  <meta property="og:title" content="Pachete &amp; Prețuri | AlphaLens">
+  <meta property="og:description" content="Pachete foto, video și foto-video pentru nunți, botezuri, cununii și majorate, oferite de AlphaLens.">
+  <meta property="og:image" content="https://poze.b-cdn.net/DSC00682.jpg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20261024a">
 </head>
 <body>
-<nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <span class="logo-text">AlphaLens</span>
-                </a>
-            </div>
-            
-            <ul class="nav-menu">
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="foto.html">Portofoliu Foto</a></li>
-                <li><a href="video.html">Portofoliu Video</a></li>
-                <li><a href="preturi.html" class="active">Pachete & Prețuri</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">F&Q</a></li>
-            </ul>
-            
-            <a href="contact.html" class="btn-oferta">Solicită Ofertă</a>
-            
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <a class="skip-link" href="#main">Sari la conținut</a>
+
+  <!-- Navigație -->
+  <header class="header" id="nav">
+    <div class="wrap">
+      <div class="header-bar">
+        <div class="brand">
+          <button type="button" class="avatar" id="profileBtn" aria-label="Despre AlphaLens" aria-controls="profile" aria-expanded="false" aria-haspopup="dialog">AL</button>
+          <a href="index.html" class="brand-name"><strong>AlphaLens</strong><span>Fotografie &amp; <b>film</b></span></a>
         </div>
-    </nav>
-<main>
-<section class="pricing-hero">
-  <span class="eyebrow">ALPHALENS · FOTOGRAFIE & FILMARE</span>
-  <h1>Pachete <span>&</span> Prețuri</h1>
-  <p>Alege formula potrivită pentru povestea voastră: fotografie, filmare sau o echipă completă foto-video.</p>
-  <nav class="event-tabs" aria-label="Alege evenimentul">
-    <button type="button" class="active" data-tab="nunta" aria-pressed="true">Nuntă</button><button type="button" data-tab="botez" aria-pressed="false">Botez</button><button type="button" data-tab="cununie" aria-pressed="false">Cununie</button><button type="button" data-tab="majorat" aria-pressed="false">Majorat</button>
+        <nav class="nav-links" aria-label="Principal">
+          <a href="index.html" class="nav-link">Acasă</a>
+          <a href="foto.html" class="nav-link">Foto</a>
+          <a href="video.html" class="nav-link">Video</a>
+          <a href="preturi.html" class="nav-link" aria-current="page">Prețuri</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="faq.html" class="nav-link">F&amp;Q</a>
+        </nav>
+        <a href="contact.html" class="mail-btn" aria-label="Scrie-ne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        <button class="menu-btn" id="menuBtn" aria-label="Deschide meniul" aria-controls="menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+      <div class="profile" id="profile" role="dialog" aria-label="Despre AlphaLens" hidden>
+        <div class="profile-head">
+          <div class="profile-mark" aria-hidden="true">AL</div>
+          <div>
+            <strong>AlphaLens</strong>
+            <span>Fotografie &amp; <b>film</b> · Târgu-Jiu</span>
+            <em><i aria-hidden="true"></i>Ne deplasăm în toată țara</em>
+          </div>
+        </div>
+        <p class="profile-text">Profesionalism, creativitate și discreție. Surprindem nunți, botezuri, cununii și majorate în fotografii și film, ca voi să vă bucurați de zi fără griji.</p>
+        <div class="profile-social">
+          <a href="https://www.instagram.com/alphalens.ro/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+          <a href="https://www.facebook.com/vladulescu.andrei.52" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21h3z"/></svg><span>Facebook</span></a>
+          <a href="https://www.youtube.com/@vladulescuandrei4367" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg><span>YouTube</span></a>
+        </div>
+        <div class="profile-contact">
+          <a href="tel:+40762309113"><small>Andrei</small><b>0762 309 113</b></a>
+          <a href="tel:+40759672943"><small>Raul</small><b>0759 672 943</b></a>
+        </div>
+        <a href="contact.html" class="profile-more">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Meniu mobil -->
+  <nav class="menu" id="menu" aria-label="Meniu mobil">
+    <a href="index.html" class="menu-link"><small>01</small>Acasă</a>
+    <a href="foto.html" class="menu-link"><small>02</small>Foto</a>
+    <a href="video.html" class="menu-link"><small>03</small>Video</a>
+    <a href="preturi.html" class="menu-link" aria-current="page"><small>04</small>Prețuri</a>
+    <a href="contact.html" class="menu-link"><small>05</small>Contact</a>
+    <a href="faq.html" class="menu-link"><small>06</small>F&amp;Q</a>
+    <p class="menu-foot">Andrei: +40 762 309 113 · Raul: +40 759 672 943<br>vladulescuandrei6@gmail.com</p>
   </nav>
-</section>
-<div class="pricing-wrap"><section class="event-section" id="nunta">
-  <header class="event-heading"><span class="eyebrow">PACHETE NUNTĂ</span><h2>Nuntă</h2><p>Povestea voastră, surprinsă în imagini și film.</p></header>
-  <h3 class="package-group-title">Foto & Video</h3>
-  <div class="packages-grid">
-    <article class="package-card">
-      <div class="package-top"><span class="package-type">Foto & Video</span><h3>Standard</h3></div>
-      <div class="package-price"><span class="price-value">1300 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf</li>
-        <li>1 videograf</li>
-        <li>Filmare cu dronă (unde permit vremea și locația)</li>
-        <li>Fotografii nelimitate, editate</li>
-        <li>Lumini de studio la biserică</li>
-        <li>Video în format Full HD</li>
-        <li>Filmare Best Moments (teaser), editată în stil cinematic</li>
-        <li>Filmare completă a evenimentului (până la 4 ore)</li>
-        <li>Ședință foto în ziua evenimentului</li>
-        <li>Predare materiale pe stick USB și galerie online</li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=nunta&amp;pachet=Standard">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="package-card package-featured">
-      <span class="popular-badge">CEL MAI POPULAR</span>
-      <div class="package-top"><span class="package-type">Foto & Video</span><h3>Premium</h3></div>
-      <div class="package-price"><span class="price-value">1600 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf</li>
-        <li><strong>2 videografi</strong></li>
-        <li>Filmare cu dronă (unde permit vremea și locația)</li>
-        <li>Fotografii nelimitate, editate</li>
-        <li><strong>Ședință foto After Wedding sau Trash the Dress</strong></li>
-        <li><strong>Video în format 4K</strong></li>
-        <li>Filmare Best Moments (teaser), editată cinematic</li>
-        <li><strong>Filmare completă nelimitată, montaj cinematic din două camere</strong></li>
-        <li>Ședință foto în ziua evenimentului</li>
-        <li>Predare materiale pe stick USB și galerie online</li>
-        <li><strong>1 album foto 30×30 cm (15 deschideri)</strong></li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=nunta&amp;pachet=Premium">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="package-card">
-      <div class="package-top"><span class="package-type">Foto & Video</span><h3>VIP</h3></div>
-      <div class="package-price"><span class="price-value">1900 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf</li>
-        <li><strong>2 videografi</strong></li>
-        <li>Filmare cu dronă (unde permit vremea și locația)</li>
-        <li>Fotografii nelimitate, editate</li>
-        <li><strong>Ședință foto Save the Date</strong></li>
-        <li><strong>Ședință foto After Wedding sau Trash the Dress</strong></li>
-        <li><strong>Video în format 4K</strong></li>
-        <li>Filmare Best Moments (teaser), editată cinematic</li>
-        <li><strong>Filmare completă nelimitată, montaj cinematic din două camere</strong></li>
-        <li>Ședință foto în ziua evenimentului</li>
-        <li>Predare materiale pe stick USB și galerie online</li>
-        <li><strong>2 albume foto 30×30 cm (fiecare cu 15 deschideri)</strong></li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=nunta&amp;pachet=VIP">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-  </div>
-  <h3 class="package-group-title">Doar foto</h3>
-  <div class="packages-grid">
-    <article class="package-card">
-      <div class="package-top"><span class="package-type">Fotografie</span><h3>Foto Standard</h3></div>
-      <div class="package-price"><span class="price-value">750 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf pe întreaga durată a evenimentului</li>
-        <li>Fotografii nelimitate, editate profesional</li>
-        <li>Ședință foto în ziua evenimentului</li>
-        <li>Lumini de studio profesionale la biserică</li>
-        <li>Predare materiale pe stick USB și galerie online</li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=nunta&amp;pachet=Foto%20Standard">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="package-card package-featured">
-      <span class="popular-badge">RECOMANDAT</span>
-      <div class="package-top"><span class="package-type">Fotografie</span><h3>Foto Plus</h3></div>
-      <div class="package-price"><span class="price-value">850 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf pe întreaga durată a evenimentului</li>
-        <li><strong>1 asistent foto</strong></li>
-        <li>Fotografii nelimitate, editate profesional</li>
-        <li>Ședință foto în ziua evenimentului</li>
-        <li>Lumini de studio profesionale la biserică</li>
-        <li>Predare materiale pe stick USB și galerie online</li>
-        <li><strong>1 album foto 30×30 cm (15 deschideri)</strong></li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=nunta&amp;pachet=Foto%20Plus">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="package-card">
-      <div class="package-top"><span class="package-type">Fotografie</span><h3>Foto Pro</h3></div>
-      <div class="package-price"><span class="price-value">1000 €</span></div>
-      <ul class="package-features">
-        <li><strong>2 fotografi pe întreaga durată a evenimentului</strong></li>
-        <li>Fotografii nelimitate, editate profesional</li>
-        <li>Ședință foto în ziua evenimentului</li>
-        <li>Lumini de studio profesionale la biserică</li>
-        <li>Predare materiale pe stick USB și galerie online</li>
-        <li><strong>1 album foto 30×30 cm (15 deschideri)</strong></li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=nunta&amp;pachet=Foto%20Pro">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-  </div>
-</section>
-<section class="event-section" id="botez">
-  <header class="event-heading"><span class="eyebrow">PACHETE BOTEZ</span><h2>Botez</h2><p>Primele amintiri ale familiei, păstrate cu grijă.</p></header>
-  <div class="packages-grid">
-    <article class="package-card">
-      <div class="package-top"><span class="package-type">Foto & Video</span><h3>Standard</h3></div>
-      <div class="package-price"><span class="price-value">650 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf + 1 cameraman pe întreaga durată a evenimentului</li>
-        <li>Fotografii nelimitate, editate profesional</li>
-        <li>Filmare Full HD cu montaj complet</li>
-        <li>Clip video Rezumat (Trailer)</li>
-        <li>Ședință foto-video în ziua botezului</li>
-        <li>Lumini de studio profesionale la biserică</li>
-        <li>Predare pe stick USB și galerie online</li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=botez&amp;pachet=Standard">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="package-card package-featured">
-      <span class="popular-badge">RECOMANDAT</span>
-      <div class="package-top"><span class="package-type">Foto & Video</span><h3>Plus</h3></div>
-      <div class="package-price"><span class="price-value">850 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf + 1 cameraman pe întreaga durată a evenimentului</li>
-        <li>Fotografii nelimitate, editate profesional</li>
-        <li><strong>Filmare 4K la calitate maximă</strong></li>
-        <li>Clip video Rezumat (Trailer)</li>
-        <li>Ședință foto-video în ziua botezului</li>
-        <li>Lumini de studio profesionale la biserică</li>
-        <li>Predare pe stick USB și galerie online</li>
-        <li><strong>1 album foto 30×30 cm (15 deschideri)</strong></li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=botez&amp;pachet=Plus">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="package-card">
-      <div class="package-top"><span class="package-type">Foto & Video</span><h3>Premium</h3></div>
-      <div class="package-price"><span class="price-value">1100 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf + 1 cameraman pe întreaga durată a evenimentului</li>
-        <li>Fotografii nelimitate, editate profesional</li>
-        <li><strong>Filmare 4K la calitate maximă</strong></li>
-        <li>Clip video Rezumat (Trailer)</li>
-        <li><strong>Ședință foto-video «Post-Botez» în altă zi</strong></li>
-        <li>Lumini de studio profesionale la biserică</li>
-        <li>Predare pe stick USB și galerie online</li>
-        <li><strong>1 album foto 30×30 cm (15 deschideri) + 1 album 20×20 cm</strong></li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=botez&amp;pachet=Premium">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-  </div>
-</section>
-<section class="event-section" id="cununie">
-  <header class="event-heading"><span class="eyebrow">PACHETE CUNUNIE</span><h2>Cununie</h2><p>Ziua în care spuneți „Da”, în fotografii și film.</p></header>
-  <div class="packages-grid">
-    <article class="package-card">
-      <div class="package-top"><span class="package-type">Foto & Video</span><h3>Standard</h3></div>
-      <div class="package-price"><span class="price-value">650 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf + 1 cameraman pe întreaga durată a evenimentului</li>
-        <li>Fotografii nelimitate, editate profesional</li>
-        <li>Filmare Full HD cu montaj complet</li>
-        <li>Clip video Rezumat (Trailer)</li>
-        <li>Ședință foto-video în ziua cununiei</li>
-        <li>Lumini de studio profesionale la biserică</li>
-        <li>Predare pe stick USB și galerie online</li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=cununie&amp;pachet=Standard">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="package-card package-featured">
-      <span class="popular-badge">RECOMANDAT</span>
-      <div class="package-top"><span class="package-type">Foto & Video</span><h3>Plus</h3></div>
-      <div class="package-price"><span class="price-value">850 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf + 1 cameraman pe întreaga durată a evenimentului</li>
-        <li>Fotografii nelimitate, editate profesional</li>
-        <li><strong>Filmare 4K la calitate maximă</strong></li>
-        <li>Clip video Rezumat (Trailer)</li>
-        <li>Ședință foto-video în ziua cununiei</li>
-        <li>Lumini de studio profesionale la biserică</li>
-        <li>Predare pe stick USB și galerie online</li>
-        <li><strong>1 album foto 30×30 cm (15 deschideri)</strong></li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=cununie&amp;pachet=Plus">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="package-card">
-      <div class="package-top"><span class="package-type">Foto & Video</span><h3>Premium</h3></div>
-      <div class="package-price"><span class="price-value">1100 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf + 1 cameraman pe întreaga durată a evenimentului</li>
-        <li>Fotografii nelimitate, editate profesional</li>
-        <li><strong>Filmare 4K la calitate maximă</strong></li>
-        <li>Clip video Rezumat (Trailer)</li>
-        <li><strong>Ședință foto-video «Post-Cununie» în altă zi</strong></li>
-        <li>Lumini de studio profesionale la biserică</li>
-        <li>Predare pe stick USB și galerie online</li>
-        <li><strong>1 album foto 30×30 cm (15 deschideri) + 1 album 20×20 cm</strong></li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=cununie&amp;pachet=Premium">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-  </div>
-</section>
-<section class="event-section" id="majorat">
-  <header class="event-heading"><span class="eyebrow">PACHETE MAJORAT</span><h2>Majorat</h2><p>Petrecerea de 18 ani, așa cum a fost: cu toată energia ei.</p></header>
-  <div class="packages-grid packages-grid--two">
-    <article class="package-card">
-      <div class="package-top"><span class="package-type">Fotografie</span><h3>Foto Majorat</h3></div>
-      <div class="package-price"><span class="price-value">300 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf pe întreaga durată a majoratului</li>
-        <li>Fotografii nelimitate, editate profesional</li>
-        <li>Ședință foto dedicată cu sărbătoritul/a și invitații</li>
-        <li>Lumini profesionale la locație</li>
-        <li>Predare materiale pe galerie online + stick USB</li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=majorat&amp;pachet=Foto%20Majorat">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="package-card package-featured">
-      <span class="popular-badge">RECOMANDAT</span>
-      <div class="package-top"><span class="package-type">Foto & Video</span><h3>Foto-Video 4K</h3></div>
-      <div class="package-price"><span class="price-value">450 €</span></div>
-      <ul class="package-features">
-        <li>1 fotograf + 1 cameraman pe întreaga durată</li>
-        <li>Fotografii nelimitate, editate profesional</li>
-        <li><strong>Filmare 4K la calitate maximă</strong></li>
-        <li><strong>Cadre aeriene cu Dronă profesionale</strong></li>
-        <li>Clip video Rezumat (Trailer Majorat)</li>
-        <li>Ședință foto-video în cadrul evenimentului</li>
-        <li>Predare materiale pe galerie online + stick USB</li>
-        <li>Cutie de stick personalizată</li>
-      </ul>
-      <a class="package-button" href="contact.html?eveniment=majorat&amp;pachet=Foto-Video%204K">Solicită ofertă <span aria-hidden="true">↗</span></a>
-    </article>
-  </div>
-  <div class="extras-box">
-    <h3>Extra opțiuni</h3>
-    <ul>
-      <li><strong>Album foto 30×30 cm (15 deschideri)</strong> — <span>150 €</span></li>
-      <li><strong>Asistent foto/video</strong> — <span>100 €</span></li>
-      <li><strong>Cameră GoPro de închiriat pentru invitați</strong> — <span>100 €</span><small>(videoclipurile filmate de invitați vor fi trimise separat față de clipul principal)</small></li>
-    </ul>
-  </div>
-</section>
-<p class="pricing-footnote">* Toate ofertele pot fi personalizate la cerere în funcție de specificul evenimentului dumneavoastră.</p>
-</div>
-<section class="pricing-contact"><span class="eyebrow">OFERTĂ PERSONALIZATĂ</span><h2>Fiecare eveniment este diferit.</h2><p>Trimite-ne data și locația evenimentului, iar oferta va fi adaptată nevoilor tale.</p><a class="package-button" href="contact.html">Discută cu noi <span aria-hidden="true">↗</span></a></section>
-</main>
-<footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <span class="logo-text">AlphaLens</span>
-                <p>Fotografie & Filmare Profesională</p>
-            </div>
-            
-            <div class="footer-links">
-                <a href="https://www.fotografi-cameramani.ro/vladulescu-andrei-cristian_8630" target="_blank" rel="noopener">Fotografi & Cameramani</a>
-                <a href="foto.html">Portofoliu Foto</a>
-                <a href="video.html">Portofoliu Video</a>
-                <a href="contact.html">Contact</a>
-                <a href="preturi.html">Pachete & Prețuri</a>
-            </div>
-            
-            <div class="footer-social">
-                <a href="https://www.facebook.com/vladulescu.andrei.52" aria-label="Facebook">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                </a>
-                <a href="https://www.instagram.com/alphalens.ro?igsh=NWN0b3Q5dTN4bHAz&utm_source=qr" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                </a>
-                <a href="https://www.youtube.com/@vladulescuandrei4367" aria-label="YouTube">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                </a>
-            </div>
-            
-            <!-- Contact -->
-<div class="footer-contact">
-  <p class="footer-contact-name">Andrei</p>
-  <p><a href="mailto:vladulescuandrei6@gmail.com">vladulescuandrei6@gmail.com</a></p>
-  <p><a href="tel:+40762309113">+40 762 309 113</a></p>
-  <p class="footer-contact-name">Raul</p>
-  <p><a href="mailto:raulneagoie@gmail.com">raulneagoie@gmail.com</a></p>
-  <p><a href="tel:+40759672943">+40 759 672 943</a></p>
-</div>
+
+  <main id="main">
+    <section class="stage stage-page">
+      <div class="flutes">
+        <div class="flutes-light" aria-hidden="true"></div>
+        <div class="wrap stage-copy hero">
+          <span class="pill-label fade-in"><span class="dot"></span>Fotografie &amp; film</span>
+          <h1 class="h-hero">
+            <span class="line"><span>Pachete &amp;</span></span>
+            <span class="line"><span><span class="gold">prețuri</span>.</span></span>
+          </h1>
+          <p class="sub fade-in">Alege formula potrivită pentru povestea voastră: fotografie, filmare sau o echipă completă foto-video.</p>
+          <div class="tabs fade-in" role="tablist" aria-label="Alege evenimentul">
+            <span class="tabs-pill" aria-hidden="true"></span>
+            <button class="tab" role="tab" aria-selected="true" aria-controls="nunta">Nuntă</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="botez">Botez</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="cununie">Cununie</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="majorat">Majorat</button>
+          </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 AlphaLens. Toate drepturile rezervate.</p>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="tab-panel" id="nunta" role="tabpanel" aria-label="Pachete nuntă">
+        <h2 class="group-title">Foto &amp; Video</h2>
+      <div class="price-grid">
+        <article class="card price-card" data-reveal>
+          <span class="badge">Foto &amp; Video</span>
+          <h3>Standard</h3>
+          <div class="price"><span class="price-amount">1300</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf</li>
+            <li>1 videograf</li>
+            <li>Filmare cu dronă (unde permit vremea și locația)</li>
+            <li>Fotografii nelimitate, editate</li>
+            <li>Lumini de studio la biserică</li>
+            <li>Video în format Full HD</li>
+            <li>Filmare Best Moments (teaser), editată în stil cinematic</li>
+            <li>Filmare completă a evenimentului (până la 4 ore)</li>
+            <li>Ședință foto în ziua evenimentului</li>
+            <li>Predare materiale pe stick USB și galerie online</li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=nunta&amp;pachet=Standard" class="btn btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+        <article class="card price-card featured" data-reveal>
+          <span class="badge">Cel mai popular</span>
+          <h3>Premium</h3>
+          <div class="price"><span class="price-amount">1600</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf</li>
+            <li><strong>2 videografi</strong></li>
+            <li>Filmare cu dronă (unde permit vremea și locația)</li>
+            <li>Fotografii nelimitate, editate</li>
+            <li><strong>Ședință foto After Wedding sau Trash the Dress</strong></li>
+            <li><strong>Video în format 4K</strong></li>
+            <li>Filmare Best Moments (teaser), editată cinematic</li>
+            <li><strong>Filmare completă nelimitată, montaj cinematic din două camere</strong></li>
+            <li>Ședință foto în ziua evenimentului</li>
+            <li>Predare materiale pe stick USB și galerie online</li>
+            <li><strong>1 album foto 30×30 cm (15 deschideri)</strong></li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=nunta&amp;pachet=Premium" class="btn btn-gold btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+        <article class="card price-card" data-reveal>
+          <span class="badge">Foto &amp; Video</span>
+          <h3>VIP</h3>
+          <div class="price"><span class="price-amount">1900</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf</li>
+            <li><strong>2 videografi</strong></li>
+            <li>Filmare cu dronă (unde permit vremea și locația)</li>
+            <li>Fotografii nelimitate, editate</li>
+            <li><strong>Ședință foto Save the Date</strong></li>
+            <li><strong>Ședință foto After Wedding sau Trash the Dress</strong></li>
+            <li><strong>Video în format 4K</strong></li>
+            <li>Filmare Best Moments (teaser), editată cinematic</li>
+            <li><strong>Filmare completă nelimitată, montaj cinematic din două camere</strong></li>
+            <li>Ședință foto în ziua evenimentului</li>
+            <li>Predare materiale pe stick USB și galerie online</li>
+            <li><strong>2 albume foto 30×30 cm (fiecare cu 15 deschideri)</strong></li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=nunta&amp;pachet=VIP" class="btn btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+      </div>
+        <h2 class="group-title">Doar foto</h2>
+      <div class="price-grid">
+        <article class="card price-card" data-reveal>
+          <span class="badge">Fotografie</span>
+          <h3>Foto Standard</h3>
+          <div class="price"><span class="price-amount">750</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf pe întreaga durată a evenimentului</li>
+            <li>Fotografii nelimitate, editate profesional</li>
+            <li>Ședință foto în ziua evenimentului</li>
+            <li>Lumini de studio profesionale la biserică</li>
+            <li>Predare materiale pe stick USB și galerie online</li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=nunta&amp;pachet=Foto%20Standard" class="btn btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+        <article class="card price-card featured" data-reveal>
+          <span class="badge">Recomandat</span>
+          <h3>Foto Plus</h3>
+          <div class="price"><span class="price-amount">850</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf pe întreaga durată a evenimentului</li>
+            <li><strong>1 asistent foto</strong></li>
+            <li>Fotografii nelimitate, editate profesional</li>
+            <li>Ședință foto în ziua evenimentului</li>
+            <li>Lumini de studio profesionale la biserică</li>
+            <li>Predare materiale pe stick USB și galerie online</li>
+            <li><strong>1 album foto 30×30 cm (15 deschideri)</strong></li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=nunta&amp;pachet=Foto%20Plus" class="btn btn-gold btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+        <article class="card price-card" data-reveal>
+          <span class="badge">Fotografie</span>
+          <h3>Foto Pro</h3>
+          <div class="price"><span class="price-amount">1000</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li><strong>2 fotografi pe întreaga durată a evenimentului</strong></li>
+            <li>Fotografii nelimitate, editate profesional</li>
+            <li>Ședință foto în ziua evenimentului</li>
+            <li>Lumini de studio profesionale la biserică</li>
+            <li>Predare materiale pe stick USB și galerie online</li>
+            <li><strong>1 album foto 30×30 cm (15 deschideri)</strong></li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=nunta&amp;pachet=Foto%20Pro" class="btn btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+      </div>
+      </div>
+      <div class="tab-panel" id="botez" role="tabpanel" aria-label="Pachete botez" hidden>
+      <div class="price-grid">
+        <article class="card price-card" data-reveal>
+          <span class="badge">Foto &amp; Video</span>
+          <h3>Standard</h3>
+          <div class="price"><span class="price-amount">650</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf + 1 cameraman pe întreaga durată a evenimentului</li>
+            <li>Fotografii nelimitate, editate profesional</li>
+            <li>Filmare Full HD cu montaj complet</li>
+            <li>Clip video Rezumat (Trailer)</li>
+            <li>Ședință foto-video în ziua botezului</li>
+            <li>Lumini de studio profesionale la biserică</li>
+            <li>Predare pe stick USB și galerie online</li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=botez&amp;pachet=Standard" class="btn btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+        <article class="card price-card featured" data-reveal>
+          <span class="badge">Recomandat</span>
+          <h3>Plus</h3>
+          <div class="price"><span class="price-amount">850</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf + 1 cameraman pe întreaga durată a evenimentului</li>
+            <li>Fotografii nelimitate, editate profesional</li>
+            <li><strong>Filmare 4K la calitate maximă</strong></li>
+            <li>Clip video Rezumat (Trailer)</li>
+            <li>Ședință foto-video în ziua botezului</li>
+            <li>Lumini de studio profesionale la biserică</li>
+            <li>Predare pe stick USB și galerie online</li>
+            <li><strong>1 album foto 30×30 cm (15 deschideri)</strong></li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=botez&amp;pachet=Plus" class="btn btn-gold btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+        <article class="card price-card" data-reveal>
+          <span class="badge">Foto &amp; Video</span>
+          <h3>Premium</h3>
+          <div class="price"><span class="price-amount">1100</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf + 1 cameraman pe întreaga durată a evenimentului</li>
+            <li>Fotografii nelimitate, editate profesional</li>
+            <li><strong>Filmare 4K la calitate maximă</strong></li>
+            <li>Clip video Rezumat (Trailer)</li>
+            <li><strong>Ședință foto-video «Post-Botez» în altă zi</strong></li>
+            <li>Lumini de studio profesionale la biserică</li>
+            <li>Predare pe stick USB și galerie online</li>
+            <li><strong>1 album foto 30×30 cm (15 deschideri) + 1 album 20×20 cm</strong></li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=botez&amp;pachet=Premium" class="btn btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+      </div>
+      </div>
+      <div class="tab-panel" id="cununie" role="tabpanel" aria-label="Pachete cununie" hidden>
+      <div class="price-grid">
+        <article class="card price-card" data-reveal>
+          <span class="badge">Foto &amp; Video</span>
+          <h3>Standard</h3>
+          <div class="price"><span class="price-amount">650</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf + 1 cameraman pe întreaga durată a evenimentului</li>
+            <li>Fotografii nelimitate, editate profesional</li>
+            <li>Filmare Full HD cu montaj complet</li>
+            <li>Clip video Rezumat (Trailer)</li>
+            <li>Ședință foto-video în ziua cununiei</li>
+            <li>Lumini de studio profesionale la biserică</li>
+            <li>Predare pe stick USB și galerie online</li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=cununie&amp;pachet=Standard" class="btn btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+        <article class="card price-card featured" data-reveal>
+          <span class="badge">Recomandat</span>
+          <h3>Plus</h3>
+          <div class="price"><span class="price-amount">850</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf + 1 cameraman pe întreaga durată a evenimentului</li>
+            <li>Fotografii nelimitate, editate profesional</li>
+            <li><strong>Filmare 4K la calitate maximă</strong></li>
+            <li>Clip video Rezumat (Trailer)</li>
+            <li>Ședință foto-video în ziua cununiei</li>
+            <li>Lumini de studio profesionale la biserică</li>
+            <li>Predare pe stick USB și galerie online</li>
+            <li><strong>1 album foto 30×30 cm (15 deschideri)</strong></li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=cununie&amp;pachet=Plus" class="btn btn-gold btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+        <article class="card price-card" data-reveal>
+          <span class="badge">Foto &amp; Video</span>
+          <h3>Premium</h3>
+          <div class="price"><span class="price-amount">1100</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf + 1 cameraman pe întreaga durată a evenimentului</li>
+            <li>Fotografii nelimitate, editate profesional</li>
+            <li><strong>Filmare 4K la calitate maximă</strong></li>
+            <li>Clip video Rezumat (Trailer)</li>
+            <li><strong>Ședință foto-video «Post-Cununie» în altă zi</strong></li>
+            <li>Lumini de studio profesionale la biserică</li>
+            <li>Predare pe stick USB și galerie online</li>
+            <li><strong>1 album foto 30×30 cm (15 deschideri) + 1 album 20×20 cm</strong></li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=cununie&amp;pachet=Premium" class="btn btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+      </div>
+      </div>
+      <div class="tab-panel" id="majorat" role="tabpanel" aria-label="Pachete majorat" hidden>
+      <div class="price-grid two">
+        <article class="card price-card" data-reveal>
+          <span class="badge">Fotografie</span>
+          <h3>Foto Majorat</h3>
+          <div class="price"><span class="price-amount">300</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf pe întreaga durată a majoratului</li>
+            <li>Fotografii nelimitate, editate profesional</li>
+            <li>Ședință foto dedicată cu sărbătoritul/a și invitații</li>
+            <li>Lumini profesionale la locație</li>
+            <li>Predare materiale pe galerie online + stick USB</li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=majorat&amp;pachet=Foto%20Majorat" class="btn btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+        <article class="card price-card featured" data-reveal>
+          <span class="badge">Recomandat</span>
+          <h3>Foto-Video 4K</h3>
+          <div class="price"><span class="price-amount">450</span><span class="price-currency">€</span></div>
+          <ul class="features">
+            <li>1 fotograf + 1 cameraman pe întreaga durată</li>
+            <li>Fotografii nelimitate, editate profesional</li>
+            <li><strong>Filmare 4K la calitate maximă</strong></li>
+            <li><strong>Cadre aeriene cu Dronă profesionale</strong></li>
+            <li>Clip video Rezumat (Trailer Majorat)</li>
+            <li>Ședință foto-video în cadrul evenimentului</li>
+            <li>Predare materiale pe galerie online + stick USB</li>
+            <li>Cutie de stick personalizată</li>
+          </ul>
+          <a href="contact.html?eveniment=majorat&amp;pachet=Foto-Video%204K" class="btn btn-gold btn-full">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </article>
+      </div>
+      <div class="card extras" data-reveal>
+        <span class="kicker">Majorat</span>
+        <h3 style="margin-top:0.5rem">Extra opțiuni</h3>
+        <ul>
+          <li><strong>Album foto 30×30 cm (15 deschideri)</strong><span>150 €</span></li>
+          <li><strong>Asistent foto/video</strong><span>100 €</span></li>
+          <li><strong>Cameră GoPro de închiriat pentru invitați</strong><span>100 €</span><small>Videoclipurile filmate de invitați vor fi trimise separat față de clipul principal.</small></li>
+        </ul>
+      </div>
+      </div>
+      <p class="note">* Toate ofertele pot fi personalizate la cerere, în funcție de specificul evenimentului vostru.</p>
+    </section>
+
+    <section class="wrap">
+      <div class="card cta" data-reveal>
+        <span class="signature">AlphaLens</span>
+        <h2 class="h-big">Fiecare eveniment este diferit.</h2>
+        <p class="sub">Trimite-ne data și locația evenimentului, iar oferta va fi adaptată nevoilor tale.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-gold">Solicită ofertă</a>
+          <a href="preturi.html" class="btn">Vezi pachetele</a>
         </div>
-    </footer>
-<script src="index.js"></script>
-<script src="preturi.js"></script>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="signature" aria-hidden="true">AlphaLens</span>
+    <nav class="footer-links" aria-label="Pagini">
+      <a href="index.html">Acasă</a>
+      <a href="foto.html">Foto</a>
+      <a href="video.html">Video</a>
+      <a href="preturi.html">Prețuri</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">F&amp;Q</a>
+    </nav>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/alphalens.ro/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/vladulescu.andrei.52" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/@vladulescuandrei4367" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.fotografi-cameramani.ro/vladulescu-andrei-cristian_8630" target="_blank" rel="noopener">Fotografi &amp; Cameramani</a>
+    </div>
+    <p class="footer-small">Andrei: <a href="tel:+40762309113">+40 762 309 113</a> · <a href="mailto:vladulescuandrei6@gmail.com">vladulescuandrei6@gmail.com</a></p>
+    <p class="footer-small">Raul: <a href="tel:+40759672943">+40 759 672 943</a> · <a href="mailto:raulneagoie@gmail.com">raulneagoie@gmail.com</a></p>
+    <p class="footer-small">© <span id="currentYear">2026</span> AlphaLens · Fotografie &amp; film din <b>Târgu-Jiu</b></p>
+  </footer>
+
+  <!-- Bara de jos -->
+  <a href="contact.html" class="dock" id="dock">
+    <p><b>Data e încă liberă?</b>Scrie-ne despre evenimentul vostru</p>
+    <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i>
+  </a>
+
+  <script src="vendor/motion.min.js?v=20261024a"></script>
+  <script src="anim.js?v=20261024a"></script>
+  <script src="site.js?v=20261024a"></script>
 </body>
 </html>
