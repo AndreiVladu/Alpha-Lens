@@ -1,4 +1,5 @@
-// DATE GALERII - Aici adaugi pozele reale pentru fiecare nuntă
+// DATE GALERII - Aici adaugi pozele pentru fiecare eveniment.
+// Cheia (ex. 'debora-moise') e aceeași cu data-gallery de pe cardul din foto.html.
 const weddingGalleries = {
     'debora-moise': {
         title: 'Alexandra & Adi',
@@ -175,149 +176,86 @@ const weddingGalleries = {
     
 };
 
-// VARIABILE GLOBALE
-let currentGallery = null;
-let currentPhotoIndex = 0;
-let touchStartX = 0;
-let touchEndX = 0;
+// ----- Galeria pe tot ecranul -----
+(function () {
+  const gallery = document.getElementById('gallery');
+  if (!gallery) return;
+  const title = document.getElementById('galleryTitle');
+  const count = document.getElementById('galleryCount');
+  const photo = document.getElementById('galleryPhoto');
+  const thumbs = document.getElementById('galleryThumbs');
+  let photos = [];
+  let index = 0;
+  let lastFocus = null;
 
-// DESCHIDE GALERIE
-function openGallery(weddingId) {
-    const gallery = weddingGalleries[weddingId];
-    if (!gallery) return;
+  const show = (i) => {
+    index = (i + photos.length) % photos.length;
+    photo.src = photos[index];
+    photo.alt = `${title.textContent}, fotografia ${index + 1}`;
+    count.textContent = `${index + 1} / ${photos.length}`;
+    [...thumbs.children].forEach((t, k) => t.setAttribute('aria-current', String(k === index)));
+    const on = thumbs.children[index];
+    if (on) on.scrollIntoView({ block: 'nearest', inline: 'center' });
+    // pregătește poza următoare
+    new Image().src = photos[(index + 1) % photos.length];
+  };
 
-    // Galeriile fără poze afișează poza de copertă a cardului
-    let photos = gallery.photos.filter(Boolean);
-    if (photos.length === 0) {
-        const cover = document.querySelector(`.wedding-card[onclick="openGallery('${weddingId}')"] img`);
-        photos = cover ? [cover.src] : [];
-    }
-    if (photos.length === 0) return;
-
-    currentGallery = { title: gallery.title, photos };
-    currentPhotoIndex = 0;
-    
-    document.getElementById('galleryTitle').textContent = currentGallery.title;
-    document.getElementById('totalPhotos').textContent = currentGallery.photos.length;
-    
-    // Generează thumbnails
-    generateThumbnails();
-    
-    // Afișează prima poză
-    updateGalleryPhoto();
-    
-    // Deschide modal
-    document.getElementById('galleryModal').classList.add('active');
+  const open = (card) => {
+    const data = weddingGalleries[card.dataset.gallery];
+    if (!data) return;
+    // galeriile fără poze arată poza de copertă a cardului
+    photos = data.photos.filter(Boolean);
+    if (!photos.length) photos = [card.querySelector('img').src];
+    lastFocus = document.activeElement;
+    title.textContent = data.title;
+    thumbs.innerHTML = '';
+    photos.forEach((src, k) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', `Fotografia ${k + 1}`);
+      b.innerHTML = `<img src="${src}" alt="" loading="lazy" decoding="async">`;
+      b.addEventListener('click', () => show(k));
+      thumbs.appendChild(b);
+    });
+    gallery.classList.add('is-open');
+    gallery.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
-}
+    document.body.classList.add('modal-open');
+    show(0);
+    gallery.querySelector('.modal-close').focus();
+  };
 
-// ÎNCHIDE GALERIE
-function closeGallery() {
-    document.getElementById('galleryModal').classList.remove('active');
-    document.body.style.overflow = 'auto';
-    currentGallery = null;
-}
+  const close = () => {
+    gallery.classList.remove('is-open');
+    gallery.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    document.body.classList.remove('modal-open');
+    if (lastFocus) lastFocus.focus();
+  };
 
-// SCHIMBĂ POZA
-function changePhoto(direction) {
-    currentPhotoIndex += direction;
-    
-    if (currentPhotoIndex >= currentGallery.photos.length) {
-        currentPhotoIndex = 0;
-    } else if (currentPhotoIndex < 0) {
-        currentPhotoIndex = currentGallery.photos.length - 1;
-    }
-    
-    updateGalleryPhoto();
-    updateThumbnails();
-}
-
-// UPDATE POZĂ
-function updateGalleryPhoto() {
-    const photo = currentGallery.photos[currentPhotoIndex];
-    document.getElementById('galleryPhoto').src = photo;
-    document.getElementById('currentPhoto').textContent = currentPhotoIndex + 1;
-}
-
-// GENEREAZĂ THUMBNAILS
-function generateThumbnails() {
-    const container = document.getElementById('galleryThumbnails');
-    container.innerHTML = '';
-    
-    currentGallery.photos.forEach((photo, index) => {
-        const thumb = document.createElement('img');
-        thumb.src = photo;
-        thumb.className = 'thumb';
-        if (index === 0) thumb.classList.add('active');
-        thumb.onclick = () => {
-            currentPhotoIndex = index;
-            updateGalleryPhoto();
-            updateThumbnails();
-        };
-        container.appendChild(thumb);
+  document.querySelectorAll('.work[data-gallery]').forEach((card) => {
+    card.addEventListener('click', () => open(card));
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(card); }
     });
-}
+  });
+  gallery.querySelector('.modal-close').addEventListener('click', close);
+  gallery.querySelector('.gallery-nav.prev').addEventListener('click', () => show(index - 1));
+  gallery.querySelector('.gallery-nav.next').addEventListener('click', () => show(index + 1));
+  gallery.querySelector('.gallery-main').addEventListener('click', (e) => { if (e.target === e.currentTarget) close(); });
+  document.addEventListener('keydown', (e) => {
+    if (!gallery.classList.contains('is-open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(index - 1);
+    if (e.key === 'ArrowRight') show(index + 1);
+  });
 
-// UPDATE THUMBNAILS ACTIVE
-function updateThumbnails() {
-    const thumbs = document.querySelectorAll('.thumb');
-    thumbs.forEach((thumb, index) => {
-        if (index === currentPhotoIndex) {
-            thumb.classList.add('active');
-        } else {
-            thumb.classList.remove('active');
-        }
-    });
-}
-
-// SWIPE PE MOBIL
-const galleryModal = document.getElementById('galleryModal');
-
-galleryModal.addEventListener('touchstart', (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-}, {passive: true});
-
-galleryModal.addEventListener('touchend', (e) => {
-    touchEndX = e.changedTouches[0].screenX;
-    handleSwipe();
-}, {passive: true});
-
-function handleSwipe() {
-    const swipeThreshold = 50;
-    const diff = touchStartX - touchEndX;
-    
-    if (Math.abs(diff) > swipeThreshold) {
-        if (diff > 0) {
-            // Swipe stânga - poza următoare
-            changePhoto(1);
-        } else {
-            // Swipe dreapta - poza anterioară
-            changePhoto(-1);
-        }
-    }
-}
-
-// KEYBOARD NAVIGATION
-document.addEventListener('keydown', (e) => {
-    if (!currentGallery) return;
-    
-    if (e.key === 'Escape') closeGallery();
-    if (e.key === 'ArrowLeft') changePhoto(-1);
-    if (e.key === 'ArrowRight') changePhoto(1);
-});
-
-// ANIMATII CARDURI LA LOAD
-document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.wedding-card');
-    
-    cards.forEach((card, index) => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(30px)';
-        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        
-        setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-        }, index * 100);
-    });
-});
+  // glisare pe telefon
+  let startX = 0;
+  const main = gallery.querySelector('.gallery-main');
+  main.addEventListener('touchstart', (e) => { startX = e.changedTouches[0].screenX; }, { passive: true });
+  main.addEventListener('touchend', (e) => {
+    const diff = startX - e.changedTouches[0].screenX;
+    if (Math.abs(diff) > 50) show(index + (diff > 0 ? 1 : -1));
+  }, { passive: true });
+})();

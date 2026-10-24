@@ -1,221 +1,338 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlphaLens | Fotografie & Filmare Profesională</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlphaLens | Fotografie &amp; Filmare Profesională</title>
+  <meta name="description" content="AlphaLens, fotografie și filmare profesională pentru nunți, botezuri, cununii și majorate, din Târgu-Jiu, în toată România.">
+  <meta name="theme-color" content="#f5efe3">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ro_RO">
+  <meta property="og:site_name" content="AlphaLens">
+  <meta property="og:title" content="AlphaLens | Fotografie &amp; Filmare Profesională">
+  <meta property="og:description" content="AlphaLens, fotografie și filmare profesională pentru nunți, botezuri, cununii și majorate, din Târgu-Jiu, în toată România.">
+  <meta property="og:image" content="https://poze.b-cdn.net/DSC00682.jpg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20261024a">
 </head>
 <body>
+  <a class="skip-link" href="#main">Sari la conținut</a>
 
-    <!-- NAVIGAȚIE -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <span class="logo-text">AlphaLens</span>
-                </a>
-            </div>
-            
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Acasă</a></li>
-                <li><a href="foto.html">Portofoliu Foto</a></li>
-                <li><a href="video.html">Portofoliu Video</a></li>
-                <li><a href="preturi.html">Pachete & Prețuri</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">F&Q</a></li>
-            </ul>
-            
-            <a href="contact.html" class="btn-oferta">Solicită Ofertă</a>
-            
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <!-- Navigație -->
+  <header class="header" id="nav">
+    <div class="wrap">
+      <div class="header-bar">
+        <div class="brand">
+          <button type="button" class="avatar" id="profileBtn" aria-label="Despre AlphaLens" aria-controls="profile" aria-expanded="false" aria-haspopup="dialog">AL</button>
+          <a href="index.html" class="brand-name"><strong>AlphaLens</strong><span>Fotografie &amp; <b>film</b></span></a>
         </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-bg">
-            <img src="https://poze.b-cdn.net/image00002.jpeg" alt="Wedding photography">
-            <div class="hero-overlay"></div>
+        <nav class="nav-links" aria-label="Principal">
+          <a href="index.html" class="nav-link" aria-current="page">Acasă</a>
+          <a href="foto.html" class="nav-link">Foto</a>
+          <a href="video.html" class="nav-link">Video</a>
+          <a href="preturi.html" class="nav-link">Prețuri</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="faq.html" class="nav-link">F&amp;Q</a>
+        </nav>
+        <a href="contact.html" class="mail-btn" aria-label="Scrie-ne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        <button class="menu-btn" id="menuBtn" aria-label="Deschide meniul" aria-controls="menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+      <div class="profile" id="profile" role="dialog" aria-label="Despre AlphaLens" hidden>
+        <div class="profile-head">
+          <div class="profile-mark" aria-hidden="true">AL</div>
+          <div>
+            <strong>AlphaLens</strong>
+            <span>Fotografie &amp; <b>film</b> · Târgu-Jiu</span>
+            <em><i aria-hidden="true"></i>Ne deplasăm în toată țara</em>
+          </div>
         </div>
-        <div class="hero-content">
-            <h1>AlphaLens</h1>
-            <p class="subtitle">Capturăm emoțiile tale în cadre de neuitat</p>
-            <a href="foto.html" class="btn-primary">Vezi Portofoliul</a>
+        <p class="profile-text">Profesionalism, creativitate și discreție. Surprindem nunți, botezuri, cununii și majorate în fotografii și film, ca voi să vă bucurați de zi fără griji.</p>
+        <div class="profile-social">
+          <a href="https://www.instagram.com/alphalens.ro/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+          <a href="https://www.facebook.com/vladulescu.andrei.52" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21h3z"/></svg><span>Facebook</span></a>
+          <a href="https://www.youtube.com/@vladulescuandrei4367" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg><span>YouTube</span></a>
         </div>
-    </section>
-
-    <!-- PORTOFOLIU VIDEO -->
-    <section id="portofoliu" class="portofoliu">
-        <div class="container-full">
-            <h2 class="section-title">Lucrări Recente - Video</h2>
-            
-            <div class="video-grid">
-                <!-- Video 1 - Nuntă -->
-                <div class="video-card" data-category="nunta">
-                    <div class="video-thumbnail" onclick="openModal('https://player.mediadelivery.net/embed/595311/586124ef-df69-41bc-8689-1fb04b434149?autoplay=true&loop=false&muted=false&preload=true&responsive=true')">
-                        <img src="https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png" alt="Nuntă">
-                       
-                        <span class="category-tag">Nuntă</span>
-                    </div>
-                </div>
-
-                <!-- Video 2 - Botez -->
-                <div class="video-card" data-category="botez">
-                    <div class="video-thumbnail" onclick="openModal('https://player.mediadelivery.net/embed/595311/61a689ef-a38a-4bb7-a291-4a253addb3d1?autoplay=true&loop=false&muted=false&preload=true&responsive=true')">
-                        <img src="https://poze.b-cdn.net/DSC00442.jpg" alt="Botez">
-                       
-                        <span class="category-tag">Nuntă</span>
-                    </div>
-                </div>
-
-                <!-- Video 3 - Cununie -->
-                <div class="video-card" data-category="cununie">
-                    <div class="video-thumbnail" onclick="openModal('https://player.mediadelivery.net/embed/595311/8e5a1cbf-5c67-45c3-8f9a-29da094461b9?autoplay=true&loop=false&muted=false&preload=true&responsive=true')">
-                        <img src="https://poze.b-cdn.net/vlcsnap-2026-02-16-18h54m07s594.png" alt="Cununie">
-                        
-                        <span class="category-tag">Botez</span>
-                    </div>
-                </div>
-
-                <!-- Video 4 - Majorat -->
-                <div class="video-card" data-category="majorat">
-                    <div class="video-thumbnail" onclick="openModal('https://player.mediadelivery.net/embed/595311/497d8d4b-3871-4155-812e-7901f4df7198?autoplay=true&loop=false&muted=false&preload=true&responsive=true')">
-                        <img src="https://poze.b-cdn.net/necta.png" alt="Majorat">
-                      
-                        <span class="category-tag">Majorat</span>
-                    </div>
-                </div>
-
-                <!-- Video 5 - Marketing -->
-                <div class="video-card" data-category="marketing">
-                    <div class="video-thumbnail" onclick="openModal('https://player.mediadelivery.net/embed/595311/cfeb331c-112f-4bdc-a620-fda6c18c3388?autoplay=true&loop=false&muted=false&preload=true&responsive=true')">
-                        <img src="https://poze.b-cdn.net/vlcsnap-2026-03-30-14h31m33s613.png" alt="Marketing">
-                       
-                        <span class="category-tag">Majorat</span>
-                    </div>
-                </div>
-
-                <!-- Video 6 - Nuntă -->
-                <div class="video-card" data-category="nunta">
-                    <div class="video-thumbnail" onclick="openModal('https://player.mediadelivery.net/embed/595311/e7bb372b-7ef9-42e3-bd69-974d363dc161?autoplay=true&loop=false&muted=true&preload=true&responsive=true')">
-                        <img src="https://poze.b-cdn.net/vlcsnap-2026-05-05-15h20m44s368.png" alt="Nuntă">
-                        
-                        <span class="category-tag">Botez</span>
-                    </div>
-                </div>
-            </div>
+        <div class="profile-contact">
+          <a href="tel:+40762309113"><small>Andrei</small><b>0762 309 113</b></a>
+          <a href="tel:+40759672943"><small>Raul</small><b>0759 672 943</b></a>
         </div>
-    </section>
-
-    <!-- TESTIMONIALE -->
-    <section class="testimoniale">
-        <div class="container-full">
-            <h2 class="section-title">Ce Spun Clienții</h2>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Uau! Andrei, deci sunt minunate 🤩🤩🤩🤩 Bomba!"</p>
-                    <div class="client">
-                        <strong>Flavia și Robert</strong>
-                        <span>Nuntă - 2026</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Top Top, chiar noi 100, suntem cu nasii si l-am vazut si ei. Genial, bravo tie, ai evoluat super!"</p>
-                    <div class="client">
-                        <strong>Alexandra & Adi</strong>
-                        <span>Nuntă - 2025</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Profesionalism, creativitate și discreție. Echipa AlphaLens este cea mai bună alegere pentru evenimentul tău."</p>
-                    <div class="client">
-                        <strong>Familia Popescu</strong>
-                        <span>Botez - 2024</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Videoclipul de la majoratul fetei noastre este absolut superb. Fiecare moment important a fost imortalizat."</p>
-                    <div class="client">
-                        <strong>Cristina D.</strong>
-                        <span>Majorat - 2023</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <span class="logo-text">AlphaLens</span>
-                <p>Fotografie & Filmare Profesională</p>
-            </div>
-            
-            <div class="footer-links">
-                <a href="https://www.fotografi-cameramani.ro/vladulescu-andrei-cristian_8630" target="_blank" rel="noopener">Fotografi & Cameramani</a>
-                <a href="foto.html">Portofoliu Foto</a>
-                <a href="video.html">Portofoliu Video</a>
-                <a href="contact.html">Contact</a>
-                <a href="preturi.html">Pachete & Prețuri</a>
-            </div>
-            
-            <div class="footer-social">
-                <a href="https://www.facebook.com/vladulescu.andrei.52" aria-label="Facebook">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                </a>
-                <a href="https://www.instagram.com/alphalens.ro?igsh=NWN0b3Q5dTN4bHAz&utm_source=qr" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                </a>
-                <a href="https://www.youtube.com/@vladulescuandrei4367" aria-label="YouTube">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                </a>
-            </div>
-            
-            <!-- Contact -->
-<div class="footer-contact">
-  <p class="footer-contact-name">Andrei</p>
-  <p><a href="mailto:vladulescuandrei6@gmail.com">vladulescuandrei6@gmail.com</a></p>
-  <p><a href="tel:+40762309113">+40 762 309 113</a></p>
-  <p class="footer-contact-name">Raul</p>
-  <p><a href="mailto:raulneagoie@gmail.com">raulneagoie@gmail.com</a></p>
-  <p><a href="tel:+40759672943">+40 759 672 943</a></p>
-</div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 AlphaLens. Toate drepturile rezervate.</p>
-        </div>
-    </footer>
-
-    <!-- VIDEO MODAL -->
-    <div id="videoModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal()">&times;</span>
-            <div class="video-container">
-                <iframe id="videoFrame" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
+        <a href="contact.html" class="profile-more">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+      </div>
     </div>
+  </header>
 
-    <script src="index.js"></script>
+  <!-- Meniu mobil -->
+  <nav class="menu" id="menu" aria-label="Meniu mobil">
+    <a href="index.html" class="menu-link" aria-current="page"><small>01</small>Acasă</a>
+    <a href="foto.html" class="menu-link"><small>02</small>Foto</a>
+    <a href="video.html" class="menu-link"><small>03</small>Video</a>
+    <a href="preturi.html" class="menu-link"><small>04</small>Prețuri</a>
+    <a href="contact.html" class="menu-link"><small>05</small>Contact</a>
+    <a href="faq.html" class="menu-link"><small>06</small>F&amp;Q</a>
+    <p class="menu-foot">Andrei: +40 762 309 113 · Raul: +40 759 672 943<br>vladulescuandrei6@gmail.com</p>
+  </nav>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="stage" id="hero">
+      <div class="wrap stage-top">
+        <p class="venues-label fade-in">Ce surprindem</p>
+        <ul class="venues fade-in" aria-label="Ce surprindem">
+          <li>Nunți</li><li>Cununii</li><li>Botezuri</li><li>Majorate</li>
+        </ul>
+        <p class="mark fade-in" aria-hidden="true">AlphaLens</p>
+      </div>
+      <div class="flutes">
+        <div class="flutes-light" aria-hidden="true"></div>
+        <div class="wrap stage-copy hero">
+          <span class="pill-label fade-in"><span class="dot"></span>Fotografie &amp; film · Târgu-Jiu</span>
+          <h1 class="h-hero">
+            <span class="line"><span>Capturăm emoțiile tale</span></span>
+            <span class="line"><span>în cadre de <span class="gold">neuitat</span>.</span></span>
+          </h1>
+          <p class="sub fade-in">Fotografie și film pentru nunți, botezuri, cununii și majorate. Voi vă bucurați de zi, noi avem grijă de amintiri.</p>
+          <div class="hero-actions fade-in">
+            <a href="contact.html" class="btn btn-gold">Solicită ofertă</a>
+            <a href="foto.html" class="btn">Vezi portofoliul</a>
+          </div>
+          <div class="reel fade-in" role="img" aria-label="Cadre din fotografiile și filmele noastre, pe o bobină care se rotește">
+            <div class="reel-floor"></div>
+            <div class="reel-ring" style="--n:6">
+              <div class="reel-card" style="--i:0"><img src="https://poze.b-cdn.net/DSC00682.jpg" width="640" height="400" alt="" draggable="false" decoding="async"></div>
+              <div class="reel-card" style="--i:1"><img src="https://poze.b-cdn.net/IMG_9329.png" width="640" height="400" alt="" draggable="false" decoding="async"></div>
+              <div class="reel-card" style="--i:2"><img src="https://poze.b-cdn.net/DSC02437.jpg" width="640" height="400" alt="" draggable="false" loading="lazy" decoding="async"></div>
+              <div class="reel-card" style="--i:3"><img src="https://poze.b-cdn.net/ionut.png" width="640" height="400" alt="" draggable="false" loading="lazy" decoding="async"></div>
+              <div class="reel-card" style="--i:4"><img src="https://poze.b-cdn.net/DSC08439.jpg" width="640" height="400" alt="" draggable="false" loading="lazy" decoding="async"></div>
+              <div class="reel-card" style="--i:5"><img src="https://poze.b-cdn.net/vlcsnap-2026-05-05-15h20m44s368.png" width="640" height="400" alt="" draggable="false" loading="lazy" decoding="async"></div>
+            </div>
+            <p class="reel-hint" aria-hidden="true">← trage ca să rotești →</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lucrări recente: video -->
+    <section class="wrap">
+      <div class="card card-head" style="padding-bottom:clamp(1.25rem,3vw,2rem)">
+        <span class="kicker">Lucrări recente</span>
+        <h2 class="h-big" style="margin-top:0.75rem" data-reveal>Filme de neuitat</h2>
+      </div>
+    </section>
+    <section class="wrap">
+      <div class="works">
+        <article class="card work" data-category="nunta" data-video="https://player.mediadelivery.net/embed/595311/586124ef-df69-41bc-8689-1fb04b434149?autoplay=true&amp;loop=false&amp;muted=false&amp;preload=true&amp;responsive=true" tabindex="0" role="button" aria-label="Vezi filmul Alexandra &amp; Adi" data-reveal data-tilt style="--d:0">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="work-head"><div><h3 class="work-title">Alexandra &amp; Adi</h3><p class="work-cat">Nuntă</p></div></div>
+          <div class="work-thumb"><img src="https://poze.b-cdn.net/vlcsnap-2026-02-02-22h44m09s478.png" width="1600" height="1000" alt="Alexandra &amp; Adi, film de nuntă" loading="lazy" decoding="async"></div>
+          <div class="work-foot"><span>2024</span><span class="play-chip"><i><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></i>Play</span></div>
+        </article>
+        <article class="card work" data-category="nunta" data-video="https://player.mediadelivery.net/embed/595311/61a689ef-a38a-4bb7-a291-4a253addb3d1?autoplay=true&amp;loop=false&amp;muted=false&amp;preload=true&amp;responsive=true" tabindex="0" role="button" aria-label="Vezi filmul Andrada &amp; Vio" data-reveal data-tilt style="--d:1">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="work-head"><div><h3 class="work-title">Andrada &amp; Vio</h3><p class="work-cat">Nuntă</p></div></div>
+          <div class="work-thumb"><img src="https://poze.b-cdn.net/DSC00442.jpg" width="1600" height="1000" alt="Andrada &amp; Vio, film de nuntă" loading="lazy" decoding="async"></div>
+          <div class="work-foot"><span>2024</span><span class="play-chip"><i><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></i>Play</span></div>
+        </article>
+        <article class="card work" data-category="botez" data-video="https://player.mediadelivery.net/embed/595311/8e5a1cbf-5c67-45c3-8f9a-29da094461b9?autoplay=true&amp;loop=false&amp;muted=false&amp;preload=true&amp;responsive=true" tabindex="0" role="button" aria-label="Vezi filmul Natalia Maria" data-reveal data-tilt style="--d:2">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="work-head"><div><h3 class="work-title">Natalia Maria</h3><p class="work-cat">Botez</p></div></div>
+          <div class="work-thumb"><img src="https://poze.b-cdn.net/vlcsnap-2026-02-16-18h54m07s594.png" width="1600" height="1000" alt="Natalia Maria, film de botez" loading="lazy" decoding="async"></div>
+          <div class="work-foot"><span>2024</span><span class="play-chip"><i><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></i>Play</span></div>
+        </article>
+        <article class="card work" data-category="majorat" data-video="https://player.mediadelivery.net/embed/595311/497d8d4b-3871-4155-812e-7901f4df7198?autoplay=true&amp;loop=false&amp;muted=false&amp;preload=true&amp;responsive=true" tabindex="0" role="button" aria-label="Vezi filmul Necta" data-reveal data-tilt style="--d:0">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="work-head"><div><h3 class="work-title">Necta</h3><p class="work-cat">Majorat</p></div></div>
+          <div class="work-thumb"><img src="https://poze.b-cdn.net/necta.png" width="1600" height="1000" alt="Necta, film de majorat" loading="lazy" decoding="async"></div>
+          <div class="work-foot"><span>2024</span><span class="play-chip"><i><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></i>Play</span></div>
+        </article>
+        <article class="card work" data-category="majorat" data-video="https://player.mediadelivery.net/embed/595311/cfeb331c-112f-4bdc-a620-fda6c18c3388?autoplay=true&amp;loop=false&amp;muted=false&amp;preload=true&amp;responsive=true" tabindex="0" role="button" aria-label="Vezi filmul Lorena" data-reveal data-tilt style="--d:1">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="work-head"><div><h3 class="work-title">Lorena</h3><p class="work-cat">Majorat</p></div></div>
+          <div class="work-thumb"><img src="https://poze.b-cdn.net/vlcsnap-2026-03-30-14h31m33s613.png" width="1600" height="1000" alt="Lorena, film de majorat" loading="lazy" decoding="async"></div>
+          <div class="work-foot"><span>2024</span><span class="play-chip"><i><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></i>Play</span></div>
+        </article>
+        <article class="card work" data-category="nunta" data-video="https://player.mediadelivery.net/embed/595311/b039636b-7abe-4d1f-85ef-eb58d41993f2?autoplay=true&amp;loop=false&amp;muted=true&amp;preload=true&amp;responsive=true" tabindex="0" role="button" aria-label="Vezi filmul Flavia &amp; Robert" data-reveal data-tilt style="--d:2">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="work-head"><div><h3 class="work-title">Flavia &amp; Robert</h3><p class="work-cat">Nuntă</p></div></div>
+          <div class="work-thumb"><img src="https://poze.b-cdn.net/IMG_9329.png" width="1600" height="1000" alt="Flavia &amp; Robert, film de nuntă" loading="lazy" decoding="async"></div>
+          <div class="work-foot"><span>Hunedoara</span><span class="play-chip"><i><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></i>Play</span></div>
+        </article>
+      </div>
+    </section>
+    <section class="wrap center">
+      <a href="video.html" class="arrow-link">Toate filmele <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+    </section>
+
+    <!-- Poză + ce facem -->
+    <section class="wrap grid-2">
+      <a href="foto.html" class="card photo-card" data-reveal aria-label="Portofoliu foto">
+        <img src="https://poze.b-cdn.net/DSC00682.jpg" width="1200" height="960" alt="Alexandra și Adi, fotografie de nuntă AlphaLens" loading="lazy" decoding="async">
+      </a>
+      <div class="card roles" data-reveal style="--d:1">
+        <div class="role">
+          <div class="tool-chips"><span class="tool">FOTO</span><span class="tool">ALBUM</span></div>
+          <h3>Fotografie de <b>eveniment</b></h3>
+        </div>
+        <div class="role">
+          <div class="tool-chips"><span class="tool">4K</span><span class="tool">DRONĂ</span></div>
+          <h3>Film <b>cinematic</b></h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ofertă -->
+    <section class="wrap">
+      <div class="card offer" data-reveal>
+        <span class="pill-label"><span class="dot"></span>Pachete</span>
+        <h2 class="h-big">Nunta voastră, de la <span class="gold">750 €</span></h2>
+        <p class="sub">Pachete foto, video sau foto-video, cu prețuri clare. Fiecare ofertă se poate adapta evenimentului vostru.</p>
+        <div class="offer-stage" id="offerStage" aria-hidden="true">
+          <div class="bars"><span></span><span></span><span></span></div>
+          <span class="chip3d on" style="left:8%;top:40%;--r:-8deg">Dronă</span>
+          <span class="chip3d" style="left:60%;top:34%;--r:6deg">4K</span>
+          <span class="chip3d" style="left:10%;top:76%;--r:4deg">Album 30×30</span>
+          <span class="chip3d on" style="left:46%;top:56%;--r:-5deg">Lumini de studio</span>
+        </div>
+        <ul class="offer-list">
+          <li>Fotografii nelimitate</li><li>Best Moments cinematic</li><li>Stick USB + galerie online</li>
+        </ul>
+        <a href="preturi.html" class="btn btn-gold">Vezi pachetele</a>
+      </div>
+    </section>
+
+    <!-- Text care se aprinde la scroll -->
+    <section class="wrap">
+      <div class="card">
+        <p class="scrub">Profesionalism, creativitate și discreție. Suntem acolo la fiecare moment important, fără să întrerupem firul firesc al zilei voastre.</p>
+      </div>
+    </section>
+
+    <!-- Testimoniale -->
+    <section class="wrap">
+      <div class="card">
+        <div class="score">
+          <div>
+            <span class="kicker">Ce spun clienții</span>
+            <h2 class="h-big" style="margin-top:0.75rem" data-reveal>Cuvinte de la miri</h2>
+          </div>
+          <p>Mesajele primite după ce și-au văzut fotografiile și filmele.</p>
+        </div>
+        <div class="tslider">
+          <div class="ttrack" id="ttrack" tabindex="0" aria-label="Testimoniale">
+          <article class="tcard">
+            <div class="tperson"><span class="tavatar" aria-hidden="true">FR</span><div><strong>Flavia și Robert</strong><span>Nuntă · 2026</span></div></div>
+            <div class="stars" aria-label="5 stele"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></div>
+            <p class="tquote">„Uau! Andrei, deci sunt minunate 🤩🤩🤩🤩 Bomba!”</p>
+          </article>
+          <article class="tcard">
+            <div class="tperson"><span class="tavatar" aria-hidden="true">AA</span><div><strong>Alexandra &amp; Adi</strong><span>Nuntă · 2025</span></div></div>
+            <div class="stars" aria-label="5 stele"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></div>
+            <p class="tquote">„Top Top, chiar noi 100, suntem cu nașii și l-am văzut și ei. Genial, bravo ție, ai evoluat super!”</p>
+          </article>
+          <article class="tcard">
+            <div class="tperson"><span class="tavatar" aria-hidden="true">FP</span><div><strong>Familia Popescu</strong><span>Botez · 2024</span></div></div>
+            <div class="stars" aria-label="5 stele"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></div>
+            <p class="tquote">„Profesionalism, creativitate și discreție. Echipa AlphaLens este cea mai bună alegere pentru evenimentul tău.”</p>
+          </article>
+          <article class="tcard">
+            <div class="tperson"><span class="tavatar" aria-hidden="true">CD</span><div><strong>Cristina D.</strong><span>Majorat · 2023</span></div></div>
+            <div class="stars" aria-label="5 stele"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></div>
+            <p class="tquote">„Videoclipul de la majoratul fetei noastre este absolut superb. Fiecare moment important a fost imortalizat.”</p>
+          </article>
+          </div>
+          <button class="tnav" id="tnext" aria-label="Următorul mesaj"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proces -->
+    <section class="wrap">
+      <div class="card">
+        <span class="kicker">Proces</span>
+        <h2 class="h-big" style="margin-top:0.75rem" data-reveal>Cum lucrăm</h2>
+        <p class="sub" style="margin-top:1rem" data-reveal>Totul e gândit ca voi să vă bucurați de ziua voastră, fără griji.</p>
+        <ol class="steps">
+          <li class="step"><b>1</b><h3>Consultare</h3><p>Ne cunoaștem și discutăm despre viziunea voastră, stilul preferat și ce momente contează cel mai mult.</p></li>
+          <li class="step"><b>2</b><h3>Planificare</h3><p>Stabilim împreună programul zilei și locațiile importante. Pregătim echipamentul și planul de fotografiere și filmare.</p></li>
+          <li class="step"><b>3</b><h3>Ziua cea mare</h3><p>Suntem prezenți discret și surprindem fiecare moment important, fără să întrerupem cursul firesc al evenimentului.</p></li>
+          <li class="step"><b>4</b><h3>Editare și predare</h3><p>Alegem cele mai bune cadre, edităm fotografiile și montăm filmul, apoi vi le predăm pe stick USB și în galeria online.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Color grading: LOG vs final -->
+    <section class="wrap">
+      <div class="card grade-card">
+        <div class="ba" data-ba role="slider" tabindex="0" aria-label="Compară cadrul LOG cu cel după color grading" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% LOG">
+          <img class="ba-img" src="https://poze.b-cdn.net/vlcsnap-2026-10-20-13h40m50s460.png" alt="Cadru dintr-un film, după color grading" loading="lazy" decoding="async" draggable="false">
+          <div class="ba-log" aria-hidden="true"><img class="ba-img" src="https://poze.b-cdn.net/vlcsnap-2026-10-20-13h40m50s460.png" alt="" loading="lazy" decoding="async" draggable="false"></div>
+          <span class="ba-tag ba-tag-l" aria-hidden="true">LOG</span>
+          <span class="ba-tag ba-tag-r" aria-hidden="true">Color grading</span>
+          <span class="ba-line" aria-hidden="true"><span class="ba-knob"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 6l-6 6 6 6zM15 6l6 6-6 6z"/></svg></span></span>
+        </div>
+        <div class="grade-text">
+          <span class="kicker">Color grading</span>
+          <h2 class="h-big" style="margin-top:0.75rem" data-reveal>De la LOG la culoare</h2>
+          <p class="sub" data-reveal>Filmăm în LOG ca să păstrăm fiecare detaliu din lumină și umbre, apoi dăm fiecărui cadru culoarea lui. Trage de bara din mijloc ca să vezi diferența.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="card cta" data-reveal>
+        <span class="signature">AlphaLens</span>
+        <h2 class="h-big">Hai să surprindem povestea voastră</h2>
+        <p class="sub">Trimite-ne data și locația, îți răspundem cât de repede putem.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-gold">Solicită ofertă</a>
+          <a href="preturi.html" class="btn">Vezi pachetele</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="signature" aria-hidden="true">AlphaLens</span>
+    <nav class="footer-links" aria-label="Pagini">
+      <a href="index.html">Acasă</a>
+      <a href="foto.html">Foto</a>
+      <a href="video.html">Video</a>
+      <a href="preturi.html">Prețuri</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">F&amp;Q</a>
+    </nav>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/alphalens.ro/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/vladulescu.andrei.52" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/@vladulescuandrei4367" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.fotografi-cameramani.ro/vladulescu-andrei-cristian_8630" target="_blank" rel="noopener">Fotografi &amp; Cameramani</a>
+    </div>
+    <p class="footer-small">Andrei: <a href="tel:+40762309113">+40 762 309 113</a> · <a href="mailto:vladulescuandrei6@gmail.com">vladulescuandrei6@gmail.com</a></p>
+    <p class="footer-small">Raul: <a href="tel:+40759672943">+40 759 672 943</a> · <a href="mailto:raulneagoie@gmail.com">raulneagoie@gmail.com</a></p>
+    <p class="footer-small">© <span id="currentYear">2026</span> AlphaLens · Fotografie &amp; film din <b>Târgu-Jiu</b></p>
+  </footer>
+
+  <!-- Bara de jos -->
+  <a href="contact.html" class="dock" id="dock">
+    <p><b>Data e încă liberă?</b>Scrie-ne despre evenimentul vostru</p>
+    <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i>
+  </a>
+
+  <!-- Video -->
+  <div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video" aria-hidden="true">
+    <button class="modal-close" aria-label="Închide video"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <div class="modal-box">
+      <iframe src="" title="Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="vendor/motion.min.js?v=20261024a"></script>
+  <script src="anim.js?v=20261024a"></script>
+  <script src="site.js?v=20261024a"></script>
 </body>
 </html>

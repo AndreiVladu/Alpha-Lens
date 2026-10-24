@@ -1,209 +1,191 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F&Q | AlphaLens</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="faq.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Întrebări Frecvente | AlphaLens</title>
+  <meta name="description" content="Răspunsuri la cele mai comune întrebări despre serviciile foto și video AlphaLens.">
+  <meta name="theme-color" content="#f5efe3">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ro_RO">
+  <meta property="og:site_name" content="AlphaLens">
+  <meta property="og:title" content="Întrebări Frecvente | AlphaLens">
+  <meta property="og:description" content="Răspunsuri la cele mai comune întrebări despre serviciile foto și video AlphaLens.">
+  <meta property="og:image" content="https://poze.b-cdn.net/DSC00682.jpg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20261024a">
 </head>
 <body>
+  <a class="skip-link" href="#main">Sari la conținut</a>
 
-    <!-- NAVIGAȚIE -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <span class="logo-text">AlphaLens</span>
-                </a>
-            </div>
-            
-            <ul class="nav-menu">
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="foto.html">Portofoliu Foto</a></li>
-                <li><a href="video.html">Portofoliu Video</a></li>
-                <li><a href="preturi.html">Pachete & Prețuri</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html" class="active">F&Q</a></li>
-            </ul>
-            
-            <a href="contact.html" class="btn-oferta">Solicită Ofertă</a>
-            
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <!-- Navigație -->
+  <header class="header" id="nav">
+    <div class="wrap">
+      <div class="header-bar">
+        <div class="brand">
+          <button type="button" class="avatar" id="profileBtn" aria-label="Despre AlphaLens" aria-controls="profile" aria-expanded="false" aria-haspopup="dialog">AL</button>
+          <a href="index.html" class="brand-name"><strong>AlphaLens</strong><span>Fotografie &amp; <b>film</b></span></a>
         </div>
+        <nav class="nav-links" aria-label="Principal">
+          <a href="index.html" class="nav-link">Acasă</a>
+          <a href="foto.html" class="nav-link">Foto</a>
+          <a href="video.html" class="nav-link">Video</a>
+          <a href="preturi.html" class="nav-link">Prețuri</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="faq.html" class="nav-link" aria-current="page">F&amp;Q</a>
+        </nav>
+        <a href="contact.html" class="mail-btn" aria-label="Scrie-ne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        <button class="menu-btn" id="menuBtn" aria-label="Deschide meniul" aria-controls="menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+      <div class="profile" id="profile" role="dialog" aria-label="Despre AlphaLens" hidden>
+        <div class="profile-head">
+          <div class="profile-mark" aria-hidden="true">AL</div>
+          <div>
+            <strong>AlphaLens</strong>
+            <span>Fotografie &amp; <b>film</b> · Târgu-Jiu</span>
+            <em><i aria-hidden="true"></i>Ne deplasăm în toată țara</em>
+          </div>
+        </div>
+        <p class="profile-text">Profesionalism, creativitate și discreție. Surprindem nunți, botezuri, cununii și majorate în fotografii și film, ca voi să vă bucurați de zi fără griji.</p>
+        <div class="profile-social">
+          <a href="https://www.instagram.com/alphalens.ro/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+          <a href="https://www.facebook.com/vladulescu.andrei.52" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21h3z"/></svg><span>Facebook</span></a>
+          <a href="https://www.youtube.com/@vladulescuandrei4367" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg><span>YouTube</span></a>
+        </div>
+        <div class="profile-contact">
+          <a href="tel:+40762309113"><small>Andrei</small><b>0762 309 113</b></a>
+          <a href="tel:+40759672943"><small>Raul</small><b>0759 672 943</b></a>
+        </div>
+        <a href="contact.html" class="profile-more">Solicită ofertă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Meniu mobil -->
+  <nav class="menu" id="menu" aria-label="Meniu mobil">
+    <a href="index.html" class="menu-link"><small>01</small>Acasă</a>
+    <a href="foto.html" class="menu-link"><small>02</small>Foto</a>
+    <a href="video.html" class="menu-link"><small>03</small>Video</a>
+    <a href="preturi.html" class="menu-link"><small>04</small>Prețuri</a>
+    <a href="contact.html" class="menu-link"><small>05</small>Contact</a>
+    <a href="faq.html" class="menu-link" aria-current="page"><small>06</small>F&amp;Q</a>
+    <p class="menu-foot">Andrei: +40 762 309 113 · Raul: +40 759 672 943<br>vladulescuandrei6@gmail.com</p>
+  </nav>
+
+  <main id="main">
+    <section class="stage stage-page">
+      <div class="flutes">
+        <div class="flutes-light" aria-hidden="true"></div>
+        <div class="wrap stage-copy hero">
+          <span class="pill-label fade-in"><span class="dot"></span>F&amp;Q</span>
+          <h1 class="h-hero">
+            <span class="line"><span>Întrebări</span></span>
+            <span class="line"><span><span class="gold">frecvente</span>.</span></span>
+          </h1>
+          <p class="sub fade-in">Găsește răspunsurile la cele mai comune întrebări despre serviciile noastre.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap faq-layout">
+      <div class="card card-tight" data-reveal>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-1">Cât timp durează să primesc fotografiile și videoclipurile?<span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a" id="faq-1"><div><p>Timpul de livrare este de obicei între 2-4 săptămâni pentru fotografii și 4-6 săptămâni pentru videoclipuri, în funcție de sezon și complexitatea proiectului. Pentru evenimente speciale, putem discuta despre termene de livrare expedite.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-2">Oferiți servicii de fotografie și filmare în același timp?<span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a" id="faq-2"><div><p>Da, oferim pachete complete care includ atât fotografie, cât și filmare profesională.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-3">Cât costă un pachet de nuntă complet?<span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a" id="faq-3"><div><p>Prețurile variază în funcție de nevoile tale specifice. Un pachet de bază pentru fotografie de nuntă începe de la 800€, iar pachetele complete (foto + video) încep de la 1400€. Contactează-ne pentru o ofertă personalizată bazată pe cerințele tale.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-4">Faceți deplasări în alte orașe sau țări?<span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a" id="faq-4"><div><p>Absolut! Ne deplasăm oriunde în România și Europa. Taxele de deplasare sunt calculate în funcție de distanță și sunt discutate transparent înainte de eveniment. Pentru destinații internaționale, oferim pachete speciale.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-5">Câte fotografii primesc în pachetul final?<span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a" id="faq-5"><div><p>Numărul de fotografii depinde de durata evenimentului și pachetul ales. În general, pentru o nuntă de o zi, livrăm între 300-500 de fotografii editate profesional.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-6">Pot solicita anumite poze sau unghiuri specifice?<span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a" id="faq-6"><div><p>Desigur! Înainte de eveniment, avem o întâlnire de planificare unde discutăm despre viziunea ta, stilul preferat și orice cerințe specifice. Ne place să colaborăm cu clienții noștri pentru a ne asigura că rezultatul final depășește așteptările.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-7">Cum primesc materialele finale?<span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a" id="faq-7"><div><p>Fotografiile și videoclipurile sunt livrate printr-o galerie online privată, unde le poți vizualiza, descărca și partaja cu familia și prietenii. De asemenea, oferim opțiunea de livrare pe stick USB sau hard disk extern pentru o calitate maximă.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-8">Ce se întâmplă dacă vremea este rea în ziua evenimentului?<span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a" id="faq-8"><div><p>Suntem pregătiți pentru orice condiții meteorologice. Avem echipament profesional rezistent la intemperii și experiență în a lucra în diverse condiții. De asemenea, discutăm dinainte despre planuri alternative pentru ședințele foto în aer liber.</p></div></div>
+          </div>
+        </div>
+      </div>
+      <aside class="side-stack" data-reveal style="--d:1">
+        <div class="card">
+          <h3>Nu ai găsit răspunsul?</h3>
+          <p>Suntem aici să te ajutăm. Contactează-ne direct și îți vom răspunde în cel mai scurt timp.</p>
+          <a href="contact.html" class="btn btn-gold">Contactează-ne</a>
+        </div>
+        <div class="card">
+          <span class="kicker">Programări</span>
+          <h3 style="margin-top:0.5rem">Rezervă din timp</h3>
+          <p>Recomandăm să ne contactezi cu cel puțin 6-12 luni înainte de eveniment pentru a ne asigura disponibilitatea.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="wrap">
+      <div class="card cta" data-reveal>
+        <span class="signature">AlphaLens</span>
+        <h2 class="h-big">Hai să surprindem povestea voastră</h2>
+        <p class="sub">Trimite-ne data și locația, îți răspundem cât de repede putem.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-gold">Solicită ofertă</a>
+          <a href="preturi.html" class="btn">Vezi pachetele</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="signature" aria-hidden="true">AlphaLens</span>
+    <nav class="footer-links" aria-label="Pagini">
+      <a href="index.html">Acasă</a>
+      <a href="foto.html">Foto</a>
+      <a href="video.html">Video</a>
+      <a href="preturi.html">Prețuri</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">F&amp;Q</a>
     </nav>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/alphalens.ro/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/vladulescu.andrei.52" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/@vladulescuandrei4367" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.fotografi-cameramani.ro/vladulescu-andrei-cristian_8630" target="_blank" rel="noopener">Fotografi &amp; Cameramani</a>
+    </div>
+    <p class="footer-small">Andrei: <a href="tel:+40762309113">+40 762 309 113</a> · <a href="mailto:vladulescuandrei6@gmail.com">vladulescuandrei6@gmail.com</a></p>
+    <p class="footer-small">Raul: <a href="tel:+40759672943">+40 759 672 943</a> · <a href="mailto:raulneagoie@gmail.com">raulneagoie@gmail.com</a></p>
+    <p class="footer-small">© <span id="currentYear">2026</span> AlphaLens · Fotografie &amp; film din <b>Târgu-Jiu</b></p>
+  </footer>
 
-    <!-- HEADER -->
-    <section class="page-header">
-        <div class="header-content">
-            <span class="subtitle-small">F&Q</span>
-            <h1>Întrebări Frecvente</h1>
-            <p>Găsește răspunsurile la cele mai comune întrebări despre serviciile noastre.</p>
-        </div>
-    </section>
+  <!-- Bara de jos -->
+  <a href="contact.html" class="dock" id="dock">
+    <p><b>Data e încă liberă?</b>Scrie-ne despre evenimentul vostru</p>
+    <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i>
+  </a>
 
-    <!-- SECȚIUNE F&Q -->
-    <section class="faq-section">
-        <div class="container-full">
-            <div class="faq-grid">
-                
-                <!-- ÎNTREBĂRI -->
-                <div class="faq-list">
-                    
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <h3>Cât timp durează să primesc fotografiile și videoclipurile?</h3>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Timpul de livrare este de obicei între 2-4 săptămâni pentru fotografii și 4-6 săptămâni pentru videoclipuri, în funcție de sezon și complexitatea proiectului. Pentru evenimente speciale, putem discuta despre termene de livrare expedite.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <h3>Oferiți servicii de fotografie și filmare în același timp?</h3>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Da, oferim pachete complete care includ atât fotografie, cât și filmare profesională. </p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <h3>Cât costă un pachet de nuntă complet?</h3>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Prețurile variază în funcție de nevoile tale specifice. Un pachet de bază pentru fotografie de nuntă începe de la 800€, iar pachetele complete (foto + video) încep de la 1400€. Contactează-ne pentru o ofertă personalizată bazată pe cerințele tale.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <h3>Faceți deplasări în alte orașe sau țări?</h3>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Absolut! Ne deplasăm oriunde în România și Europa. Taxele de deplasare sunt calculate în funcție de distanță și sunt discutate transparent înainte de eveniment. Pentru destinații internaționale, oferim pachete speciale.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <h3>Câte fotografii primesc în pachetul final?</h3>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Numărul de fotografii depinde de durata evenimentului și pachetul ales. În general, pentru o nuntă de o zi, livrăm între 300-500 de fotografii editate profesional. </p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <h3>Pot solicita anumite poze sau unghiuri specifice?</h3>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Desigur! Înainte de eveniment, avem o întâlnire de planificare unde discutăm despre viziunea ta, stilul preferat și orice cerințe specifice. Ne place să colaborăm cu clienții noștri pentru a ne asigura că rezultatul final depășește așteptările.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <h3>Cum primesc materialele finale?</h3>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Fotografiile și videoclipurile sunt livrate printr-o galerie online privată, unde le poți vizualiza, descărca și partaja cu familia și prietenii. De asemenea, oferim opțiunea de livrare pe stick USB sau hard disk extern pentru o calitate maximă.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <h3>Ce se întâmplă dacă vremea este rea în ziua evenimentului?</h3>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Suntem pregătiți pentru orice condiții meteorologice. Avem echipament profesional rezistent la intemperii și experiență în a lucra în diverse condiții. De asemenea, discutăm dinainte despre planuri alternative pentru ședințele foto în aer liber.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- SIDEBAR CONTACT -->
-                <div class="faq-sidebar">
-                    <div class="sidebar-box">
-                        <h3>Nu ai găsit răspunsul?</h3>
-                        <p>Suntem aici să te ajutăm. Contactează-ne direct și îți vom răspunde în cel mai scurt timp.</p>
-                        <a href="contact.html" class="btn-sidebar">Contactează-ne</a>
-                    </div>
-                    
-                    <div class="sidebar-box">
-                        <h3>Programări</h3>
-                        <p>Recomandăm să ne contactezi cu cel puțin 6-12 luni înainte de eveniment pentru a ne asigura disponibilitatea.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER (identic cu index.html) -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <span class="logo-text">AlphaLens</span>
-                <p>Fotografie & Filmare Profesională</p>
-            </div>
-            
-            <div class="footer-links">
-                <a href="https://www.fotografi-cameramani.ro/vladulescu-andrei-cristian_8630" target="_blank" rel="noopener">Fotografi & Cameramani</a>
-                <a href="foto.html">Portofoliu Foto</a>
-                <a href="video.html">Portofoliu Video</a>
-                <a href="contact.html">Contact</a>
-                <a href="preturi.html">Pachete & Prețuri</a>
-            </div>
-            
-            <div class="footer-social">
-                <a href="https://www.facebook.com/vladulescu.andrei.52" aria-label="Facebook">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                </a>
-                <a href="https://www.instagram.com/alphalens.ro?igsh=NWN0b3Q5dTN4bHAz&utm_source=qr" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                </a>
-                <a href="https://www.youtube.com/@vladulescuandrei4367" aria-label="YouTube">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                </a>
-            </div>
-            
-            <!-- Contact -->
-<div class="footer-contact">
-  <p class="footer-contact-name">Andrei</p>
-  <p><a href="mailto:vladulescuandrei6@gmail.com">vladulescuandrei6@gmail.com</a></p>
-  <p><a href="tel:+40762309113">+40 762 309 113</a></p>
-  <p class="footer-contact-name">Raul</p>
-  <p><a href="mailto:raulneagoie@gmail.com">raulneagoie@gmail.com</a></p>
-  <p><a href="tel:+40759672943">+40 759 672 943</a></p>
-</div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 AlphaLens. Toate drepturile rezervate.</p>
-        </div>
-    </footer>
-
-    <script src="index.js"></script>
-    <script src="faq.js"></script>
+  <script src="vendor/motion.min.js?v=20261024a"></script>
+  <script src="anim.js?v=20261024a"></script>
+  <script src="site.js?v=20261024a"></script>
 </body>
 </html>
