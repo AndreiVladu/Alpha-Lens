@@ -324,7 +324,51 @@ const weddingGalleries = {
         ]
     },
 
-    
+    'majorat3': {
+        title: 'Ariana',
+        photos: [
+            'https://poze.b-cdn.net/majorate/ariana/DSC00004.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00011.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00012.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00013.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00014.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00018.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00020.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00032.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00037.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00040.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00060.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00062.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00064.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00078.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00080.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00082.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00105.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00117.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00117-2.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00121.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00127.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00133.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00147.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00158.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00170.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00174.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00175.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00181.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00190.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00213.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00217.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00228.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00239.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00247.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00275.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00280.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00296.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00306.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00323.webp',
+            'https://poze.b-cdn.net/majorate/ariana/DSC00331.webp'
+        ]
+    },
 };
 
 // ----- Galeria pe tot ecranul -----
