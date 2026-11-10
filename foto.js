@@ -319,7 +319,6 @@ const weddingGalleries = {
             'https://poze.b-cdn.net/nunti/valentin-larisa/DSC06402.webp',
             'https://poze.b-cdn.net/nunti/valentin-larisa/DSC06408.webp',
             'https://poze.b-cdn.net/nunti/valentin-larisa/DSC06420.webp',
-            'https://poze.b-cdn.net/nunti/valentin-larisa/DSC06440.webp',
             'https://poze.b-cdn.net/nunti/valentin-larisa/DSC06521.webp',
             'https://poze.b-cdn.net/nunti/valentin-larisa/DSC06525.webp',
             'https://poze.b-cdn.net/nunti/valentin-larisa/DSC06535.webp',
