@@ -1,5 +1,5 @@
 // DATE GALERII - Aici adaugi pozele pentru fiecare eveniment.
-// Cheia (ex. 'debora-moise') e aceeași cu data-gallery de pe cardul din foto.html.
+// Cheia (ex. 'debora-moise') e aceeași cu data-gallery de pe cardul din /foto.
 const weddingGalleries = {
     'debora-moise': {
         title: 'Alexandra & Adi',

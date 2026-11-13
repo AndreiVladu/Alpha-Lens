@@ -263,7 +263,7 @@ if (tabs.length) {
     });
     movePill(tab);
   }));
-  // un link de forma preturi.html#botez deschide direct tab-ul Botez
+  // un link de forma /preturi#botez deschide direct tab-ul Botez
   const fromHash = document.querySelector(`.tab[aria-controls="${location.hash.slice(1)}"]`);
   if (fromHash) fromHash.click();
   tabs.forEach((tab) => tab.addEventListener('click', () => history.replaceState(null, '', '#' + tab.getAttribute('aria-controls'))));
@@ -283,7 +283,7 @@ const MAIL_CONFIG = {
 
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  // precompletează mesajul cu pachetul ales pe pagina de prețuri (ex: contact.html?eveniment=nunta&pachet=Premium)
+  // precompletează mesajul cu pachetul ales pe pagina de prețuri (ex: /contact?eveniment=nunta&pachet=Premium)
   const params = new URLSearchParams(location.search);
   const pachet = params.get('pachet');
   const mesaj = document.getElementById('mesaj');
