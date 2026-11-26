@@ -688,3 +688,6 @@ body.menu-open .dock, body.modal-open .dock { visibility: hidden; }
   .profile { transform: none; }
 }
 .card-tight { padding: clamp(1.25rem, 4vw, 2rem); }
+
+/* Linkuri în răspunsurile din FAQ */
+.faq-a a { color: var(--gold-ink); text-decoration: underline; text-underline-offset: 0.15em; }
